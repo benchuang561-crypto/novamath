@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaMath — Learn Mathematics Free</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="bg-grid"></div>
+    <div class="bg-particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&#9674;</span>
+                <span class="logo-text">NOVA<span class="accent">MATH</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#progress" class="nav-link">My Progress</a></li>
+            </ul>
+            <button class="btn btn-glow" onclick="document.getElementById('courses').scrollIntoView({behavior:'smooth'})">Start Learning</button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">&#9776;</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">100% FREE &bull; ALWAYS</div>
+            <h1 class="hero-title">
+                Master Mathematics<br>
+                <span class="gradient-text">At Light Speed</span>
+            </h1>
+            <p class="hero-subtitle">
+                Interactive lessons, real-time feedback, and a curriculum designed for the future.
+                From Algebra to Precalculus — your journey starts here.
+            </p>
+            <div class="hero-actions">
+                <button class="btn btn-primary btn-lg" onclick="document.getElementById('courses').scrollIntoView({behavior:'smooth'})">
+                    Explore Courses
+                    <span class="btn-arrow">&rarr;</span>
+                </button>
+                <button class="btn btn-outline btn-lg" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
+                    How It Works
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Courses</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="120">0</span>
+                    <span class="stat-label">Lessons</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-label">Practice Problems</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="orbit-system">
+                <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+                <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+                <div class="orbit orbit-3"><div class="orbit-dot"></div></div>
+                <div class="orbit-center">
+                    <span class="math-symbol">&Sigma;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="section" id="courses">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CURRICULUM</span>
+                <h2 class="section-title">Choose Your <span class="gradient-text">Mission</span></h2>
+                <p class="section-desc">Each course is structured into units with video lessons, interactive exercises, and mastery challenges.</p>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Algebra 1 -->
+                <div class="course-card" onclick="window.location.href='course.html?course=algebra1'">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <div class="course-icon algebra1-icon">
+                            <span>x</span>
+                        </div>
+                        <span class="course-level">Foundation</span>
+                    </div>
+                    <h3 class="course-title">Algebra 1</h3>
+                    <p class="course-desc">Master the fundamentals — variables, equations, inequalities, functions, and graphing. Build the core skills every math journey needs.</p>
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-icon">&#9655;</span>
+                            <span>8 Units</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-icon">&#9733;</span>
+                            <span>32 Lessons</span>
+                        </div>
+                    </div>
+                    <div class="course-topics">
+                        <span class="topic-tag">Linear Equations</span>
+                        <span class="topic-tag">Inequalities</span>
+                        <span class="topic-tag">Functions</span>
+                        <span class="topic-tag">Exponents</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-progress="0"></div>
+                        </div>
+                        <span class="card-cta">Begin Course &rarr;</span>
+                    </div>
+                </div>
+
+                <!-- Algebra 2 -->
+                <div class="course-card" onclick="window.location.href='course.html?course=algebra2'">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <div class="course-icon algebra2-icon">
+                            <span>x&sup2;</span>
+                        </div>
+                        <span class="course-level">Intermediate</span>
+                    </div>
+                    <h3 class="course-title">Algebra 2</h3>
+                    <p class="course-desc">Go deeper into polynomial, rational, exponential, and logarithmic functions. Unlock complex numbers and sequences.</p>
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-icon">&#9655;</span>
+                            <span>9 Units</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-icon">&#9733;</span>
+                            <span>36 Lessons</span>
+                        </div>
+                    </div>
+                    <div class="course-topics">
+                        <span class="topic-tag">Polynomials</span>
+                        <span class="topic-tag">Logarithms</span>
+                        <span class="topic-tag">Sequences</span>
+                        <span class="topic-tag">Complex Numbers</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-progress="0"></div>
+                        </div>
+                        <span class="card-cta">Begin Course &rarr;</span>
+                    </div>
+                </div>
+
+                <!-- Geometry -->
+                <div class="course-card" onclick="window.location.href='course.html?course=geometry'">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <div class="course-icon geometry-icon">
+                            <span>&#9651;</span>
+                        </div>
+                        <span class="course-level">Intermediate</span>
+                    </div>
+                    <h3 class="course-title">Geometry</h3>
+                    <p class="course-desc">Explore shapes, proofs, transformations, and spatial reasoning. From triangles to circles to 3D solids.</p>
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-icon">&#9655;</span>
+                            <span>10 Units</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-icon">&#9733;</span>
+                            <span>38 Lessons</span>
+                        </div>
+                    </div>
+                    <div class="course-topics">
+                        <span class="topic-tag">Congruence</span>
+                        <span class="topic-tag">Similarity</span>
+                        <span class="topic-tag">Trigonometry</span>
+                        <span class="topic-tag">Proofs</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-progress="0"></div>
+                        </div>
+                        <span class="card-cta">Begin Course &rarr;</span>
+                    </div>
+                </div>
+
+                <!-- Precalculus -->
+                <div class="course-card" onclick="window.location.href='course.html?course=precalculus'">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <div class="course-icon precalc-icon">
+                            <span>&fnof;</span>
+                        </div>
+                        <span class="course-level">Advanced</span>
+                    </div>
+                    <h3 class="course-title">Precalculus</h3>
+                    <p class="course-desc">The launchpad to calculus — trigonometric identities, limits, vectors, parametric equations, and polar coordinates.</p>
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <span class="meta-icon">&#9655;</span>
+                            <span>7 Units</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-icon">&#9733;</span>
+                            <span>28 Lessons</span>
+                        </div>
+                    </div>
+                    <div class="course-topics">
+                        <span class="topic-tag">Trig Identities</span>
+                        <span class="topic-tag">Vectors</span>
+                        <span class="topic-tag">Limits</span>
+                        <span class="topic-tag">Polar Coords</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" data-progress="0"></div>
+                        </div>
+                        <span class="card-cta">Begin Course &rarr;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section section-dark" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">WHY NOVAMATH</span>
+                <h2 class="section-title">Built for the <span class="gradient-text">Next Generation</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Structured Learning Path</h3>
+                    <p>Courses build on each other. Each lesson unlocks the next, ensuring you never miss a foundational concept.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Learn at Your Pace</h3>
+                    <p>No deadlines, no pressure. Revisit lessons, redo exercises, and master concepts on your own schedule.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3>Track Your Progress</h3>
+                    <p>Visual progress tracking across every unit and lesson. See exactly where you are and what's next.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3>Interactive Practice</h3>
+                    <p>Solve problems directly in your browser with instant feedback. Step-by-step solutions when you need them.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 15a3 3 0 100-6 3 3 0 000 6z"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/>
+                        </svg>
+                    </div>
+                    <h3>Completely Free</h3>
+                    <p>No subscriptions, no paywalls, no hidden fees. Premium education should be accessible to everyone.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+                        </svg>
+                    </div>
+                    <h3>Works Everywhere</h3>
+                    <p>Fully responsive. Desktop, tablet, or phone — your classroom goes wherever you do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress / CTA Section -->
+    <section class="section" id="progress">
+        <div class="container">
+            <div class="cta-block">
+                <div class="cta-content">
+                    <span class="section-tag">YOUR JOURNEY</span>
+                    <h2 class="section-title">Ready to <span class="gradient-text">Launch</span>?</h2>
+                    <p class="section-desc">Pick a course and start learning. Your progress is saved locally so you can pick up right where you left off.</p>
+                    <button class="btn btn-primary btn-lg" onclick="document.getElementById('courses').scrollIntoView({behavior:'smooth'})">
+                        Choose a Course
+                        <span class="btn-arrow">&rarr;</span>
+                    </button>
+                </div>
+                <div class="cta-visual">
+                    <div class="progress-rings">
+                        <div class="ring" data-course="Algebra 1" data-color="#00d4ff">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="52" class="ring-bg"/>
+                                <circle cx="60" cy="60" r="52" class="ring-fill" style="--color: #00d4ff" data-course-key="algebra1"/>
+                            </svg>
+                            <span class="ring-label">ALG 1</span>
+                        </div>
+                        <div class="ring" data-course="Algebra 2" data-color="#a855f7">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="52" class="ring-bg"/>
+                                <circle cx="60" cy="60" r="52" class="ring-fill" style="--color: #a855f7" data-course-key="algebra2"/>
+                            </svg>
+                            <span class="ring-label">ALG 2</span>
+                        </div>
+                        <div class="ring" data-course="Geometry" data-color="#22c55e">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="52" class="ring-bg"/>
+                                <circle cx="60" cy="60" r="52" class="ring-fill" style="--color: #22c55e" data-course-key="geometry"/>
+                            </svg>
+                            <span class="ring-label">GEO</span>
+                        </div>
+                        <div class="ring" data-course="Precalculus" data-color="#f97316">
+                            <svg viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="52" class="ring-bg"/>
+                                <circle cx="60" cy="60" r="52" class="ring-fill" style="--color: #f97316" data-course-key="precalculus"/>
+                            </svg>
+                            <span class="ring-label">PRE-C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">&#9674;</span>
+                        <span class="logo-text">NOVA<span class="accent">MATH</span></span>
+                    </a>
+                    <p>Free mathematics education for everyone. Built with passion for learning.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Courses</h4>
+                    <a href="course.html?course=algebra1">Algebra 1</a>
+                    <a href="course.html?course=algebra2">Algebra 2</a>
+                    <a href="course.html?course=geometry">Geometry</a>
+                    <a href="course.html?course=precalculus">Precalculus</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Platform</h4>
+                    <a href="#features">Features</a>
+                    <a href="#progress">Progress</a>
+                    <a href="#courses">All Courses</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NovaMath. Free and open for all.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="practice-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

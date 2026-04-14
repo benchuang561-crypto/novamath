@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson — NovaMath</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&#9674;</span>
+                <span class="logo-text">NOVA<span class="accent">MATH</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#courses" class="nav-link">All Courses</a></li>
+            </ul>
+            <a href="index.html" class="btn btn-glow">Home</a>
+        </div>
+    </nav>
+
+    <!-- Lesson Page -->
+    <div class="lesson-page">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <a id="bc-course-link" href="course.html"><span id="bc-course">Course</span></a>
+            <span class="breadcrumb-sep">/</span>
+            <span id="bc-lesson">Lesson</span>
+        </div>
+
+        <div class="lesson-header">
+            <h1>Lesson Title</h1>
+            <p style="color: var(--text-muted); margin-top: 4px;"></p>
+        </div>
+
+        <!-- Lesson Content -->
+        <div class="lesson-content-area">
+            <p>Loading lesson content...</p>
+        </div>
+
+        <!-- Practice Problems -->
+        <div class="practice-section" style="display: none;"></div>
+
+        <!-- Mark Complete & Navigation -->
+        <div style="text-align: center; margin-bottom: 32px;">
+            <button id="mark-complete" class="btn btn-outline btn-lg">Mark as Complete</button>
+        </div>
+
+        <div class="lesson-nav">
+            <button id="prev-lesson" class="btn btn-outline">&larr; Previous Lesson</button>
+            <button id="next-lesson" class="btn btn-primary">Next Lesson &rarr;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 NovaMath. Free and open for all.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="practice-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
