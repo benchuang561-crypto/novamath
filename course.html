@@ -1,72 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course — NovaMath</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course — NovaMath</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bg-grid"></div>
-    <div class="bg-particles" id="particles"></div>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon">&#9674;</span>
-                <span class="logo-text">NOVA<span class="accent">MATH</span></span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html#courses" class="nav-link">All Courses</a></li>
-            </ul>
-            <a href="index.html" class="btn btn-glow">Home</a>
-        </div>
-    </nav>
-
-    <!-- Course Hero -->
-    <section class="course-hero">
-        <div class="breadcrumb">
-            <a href="index.html">Home</a>
-            <span class="breadcrumb-sep">/</span>
-            <a href="index.html#courses">Courses</a>
-            <span class="breadcrumb-sep">/</span>
-            <span id="breadcrumb-course">Course</span>
-        </div>
-        <div class="course-hero-content">
-            <div class="course-hero-icon">
-                <span></span>
-            </div>
-            <div class="course-hero-info">
-                <h1>Course Title</h1>
-                <p>Course description goes here.</p>
-            </div>
-        </div>
-        <div class="course-progress-bar">
-            <div class="progress-label">
-                <span>Course Progress</span>
-                <span class="progress-pct">0%</span>
-            </div>
-            <div class="progress-bar-container">
-                <div class="progress-bar"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Units -->
+  <div id="particles"></div>
+  <nav class="navbar"><a href="index.html" class="logo">NovaMath</a></nav>
+  <main>
+    <div class="course-hero">
+      <div class="course-hero-icon"><span></span></div>
+      <div class="course-hero-info"><h1></h1><p></p></div>
+    </div>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> > <span id="breadcrumb-course"></span>
+    </div>
+    <div class="course-progress-bar">
+      <div class="progress-bar"></div><span class="progress-pct">0%</span>
+    </div>
     <section class="units-section"></section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 NovaMath. Free and open for all.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="practice-data.js"></script>
-    <script src="app.js"></script>
+  </main>
+  <script src="app.js"></script>
 </body>
 </html>
