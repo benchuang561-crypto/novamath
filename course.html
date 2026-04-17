@@ -5,23 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Course — NovaMath</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Exo+2:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="particles"></div>
-  <nav class="navbar"><a href="index.html" class="logo">NovaMath</a></nav>
+  
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">∑</span>
+        <span class="logo-text">Nova<span class="accent">Math</span></span>
+      </a>
+    </div>
+  </nav>
+
   <main>
     <div class="course-hero">
-      <div class="course-hero-icon"><span></span></div>
-      <div class="course-hero-info"><h1></h1><p></p></div>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span id="breadcrumb-course">Course</span>
+      </div>
+      
+      <div class="course-hero-content">
+        <div class="course-hero-icon"><span></span></div>
+        <div class="course-hero-info">
+          <h1></h1>
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="course-progress-bar">
+        <div class="progress-label">
+          <span>Course Progress</span>
+          <span class="progress-pct">0%</span>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
     </div>
-    <div class="breadcrumb">
-      <a href="index.html">Home</a> > <span id="breadcrumb-course"></span>
-    </div>
-    <div class="course-progress-bar">
-      <div class="progress-bar"></div><span class="progress-pct">0%</span>
-    </div>
+    
     <section class="units-section"></section>
   </main>
+  
   <script src="app.js"></script>
 </body>
 </html>
