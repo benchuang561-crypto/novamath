@@ -9,7 +9,7 @@
 </head>
 <body>
   <div id="particles"></div>
-  
+
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="logo">
@@ -43,7 +43,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="hero-visual">
         <div class="orbit-system">
           <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
@@ -63,7 +63,7 @@
           <h2 class="section-title">Choose Your Path</h2>
           <p class="section-desc">From algebra fundamentals to advanced precalculus concepts.</p>
         </div>
-        
+
         <div class="courses-grid">
           <div class="course-card" data-course="algebra1">
             <div class="card-glow"></div>
@@ -143,6 +143,42 @@
               </div>
               <span class="card-cta">Start Course →</span>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="practice">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PRACTICE</span>
+          <h2 class="section-title">Quick Practice</h2>
+          <p class="section-desc">Pick a topic and sharpen your skills with instant feedback.</p>
+        </div>
+
+        <div class="practice-controls">
+          <select id="practice-topic" class="practice-select">
+            <option value="mixed">Mixed Topics</option>
+            <option value="algebra1">Algebra 1</option>
+            <option value="algebra2">Algebra 2</option>
+            <option value="geometry">Geometry</option>
+            <option value="precalculus">Precalculus</option>
+          </select>
+          <button id="new-problem" class="btn btn-outline">New Problem</button>
+        </div>
+
+        <div class="practice-workspace" id="practice-workspace">
+          <div class="practice-card">
+            <div class="practice-progress">
+              <span class="practice-counter">Problem <span id="prob-current">1</span> / <span id="prob-total">5</span></span>
+              <span class="practice-score">Score: <span id="prob-score">0</span></span>
+            </div>
+            <div class="practice-question" id="prob-question">Select a topic and click "New Problem" to begin.</div>
+            <div class="practice-answer-row">
+              <input type="text" id="prob-answer" class="practice-input" placeholder="Your answer">
+              <button id="prob-check" class="btn btn-primary">Check</button>
+            </div>
+            <div class="practice-feedback" id="prob-feedback"></div>
           </div>
         </div>
       </div>

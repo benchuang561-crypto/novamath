@@ -268,6 +268,11 @@ button {
     font-size: 1rem;
 }
 
+.btn-sm {
+    padding: 6px 16px;
+    font-size: 0.8rem;
+}
+
 .btn-arrow {
     transition: transform 0.3s;
 }
@@ -1237,12 +1242,47 @@ button {
     margin-bottom: 32px;
 }
 
-.practice-section h2 {
+.practice-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.practice-section-header h2 {
     font-family: var(--font-display);
     font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 32px;
     color: var(--accent-cyan);
+}
+
+.practice-section-tools {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.practice-score-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(0,212,255,0.05);
+    border: 1px solid rgba(0,212,255,0.15);
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+}
+
+#score-fraction {
+    color: var(--text-secondary);
+}
+
+#score-pct {
+    color: var(--accent-cyan);
+    font-weight: 600;
 }
 
 .practice-problem {
@@ -1267,6 +1307,7 @@ button {
     display: flex;
     gap: 12px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .problem-input input {
@@ -1301,6 +1342,37 @@ button {
 
 .problem-input .btn-check:hover {
     background: rgba(0,212,255,0.2);
+}
+
+.problem-hint-btn {
+    padding: 10px 20px;
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.3s;
+}
+
+.problem-hint-btn:hover {
+    border-color: var(--accent-purple);
+    color: var(--accent-purple);
+}
+
+.problem-hint {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: rgba(168,85,247,0.05);
+    border: 1px solid rgba(168,85,247,0.15);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    display: none;
+}
+
+.problem-hint.visible {
+    display: block;
 }
 
 .practice-stats {
@@ -1338,6 +1410,29 @@ button {
     display: block;
 }
 
+.practice-summary {
+    margin-top: 24px;
+}
+
+.summary-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    background: rgba(34,197,94,0.08);
+    border: 1px solid rgba(34,197,94,0.2);
+    border-radius: 12px;
+}
+
+.summary-icon {
+    font-size: 1.5rem;
+}
+
+.summary-text {
+    color: var(--accent-green);
+    font-weight: 600;
+}
+
 .lesson-nav {
     display: flex;
     justify-content: space-between;
@@ -1347,6 +1442,357 @@ button {
 .lesson-nav .btn {
     flex: 1;
     justify-content: center;
+}
+
+/* ==============================
+   INDEX PAGE — Quick Practice
+   ============================== */
+
+.practice-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.practice-select {
+    padding: 12px 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    min-width: 200px;
+}
+
+.practice-select:focus {
+    border-color: var(--accent-cyan);
+}
+
+.practice-workspace {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.practice-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 32px 40px;
+    position: relative;
+}
+
+.practice-progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+}
+
+.practice-counter {
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+}
+
+.practice-score {
+    color: var(--accent-cyan);
+    font-weight: 600;
+}
+
+.practice-question {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    margin-bottom: 24px;
+    line-height: 1.6;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.practice-answer-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.practice-input {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px 18px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.practice-input:focus {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 0 3px rgba(0,212,255,0.1);
+}
+
+.practice-feedback {
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: none;
+}
+
+.practice-feedback.correct {
+    display: block;
+    background: rgba(34,197,94,0.08);
+    color: var(--accent-green);
+    border: 1px solid rgba(34,197,94,0.2);
+}
+
+.practice-feedback.incorrect {
+    display: block;
+    background: rgba(249,115,22,0.08);
+    color: var(--accent-orange);
+    border: 1px solid rgba(249,115,22,0.2);
+}
+
+.practice-feedback .feedback-answer {
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+/* ==============================
+   COURSE PAGE — Challenge
+   ============================== */
+
+#course-practice-section {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+}
+
+.challenge-controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.challenge-workspace {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.challenge-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 36px 40px;
+    position: relative;
+}
+
+.challenge-progress-bar {
+    width: 100%;
+    height: 6px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.challenge-progress-fill {
+    height: 100%;
+    background: var(--gradient-main);
+    border-radius: 3px;
+    width: 0%;
+    transition: width 0.4s ease;
+}
+
+.challenge-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.challenge-counter {
+    color: var(--text-muted);
+}
+
+.challenge-streak {
+    color: var(--accent-orange);
+    font-weight: 600;
+}
+
+.challenge-score {
+    color: var(--accent-cyan);
+    font-weight: 600;
+}
+
+.challenge-question {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    min-height: 50px;
+}
+
+.challenge-hint {
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background: rgba(168,85,247,0.06);
+    border: 1px solid rgba(168,85,247,0.15);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    display: none;
+}
+
+.challenge-hint.visible {
+    display: block;
+}
+
+.challenge-answer-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.challenge-feedback {
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: none;
+}
+
+.challenge-feedback.correct {
+    display: block;
+    background: rgba(34,197,94,0.08);
+    color: var(--accent-green);
+    border: 1px solid rgba(34,197,94,0.2);
+}
+
+.challenge-feedback.incorrect {
+    display: block;
+    background: rgba(249,115,22,0.08);
+    color: var(--accent-orange);
+    border: 1px solid rgba(249,115,22,0.2);
+}
+
+/* Challenge Results */
+.challenge-results {
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.results-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 48px 40px;
+    text-align: center;
+}
+
+.results-title {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: var(--text-primary);
+}
+
+.results-score-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: var(--gradient-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    box-shadow: 0 0 40px rgba(0,212,255,0.2);
+}
+
+.results-score-circle span {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.results-summary {
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    font-size: 1rem;
+}
+
+.results-breakdown {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.result-item.correct {
+    border-color: rgba(34,197,94,0.2);
+    background: rgba(34,197,94,0.04);
+}
+
+.result-item.incorrect {
+    border-color: rgba(249,115,22,0.2);
+    background: rgba(249,115,22,0.04);
+}
+
+.result-status {
+    font-weight: 700;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.result-item.correct .result-status {
+    color: var(--accent-green);
+}
+
+.result-item.incorrect .result-status {
+    color: var(--accent-orange);
+}
+
+.result-q {
+    flex: 1;
+    color: var(--text-primary);
+}
+
+.result-a {
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
 }
 
 /* Scrollbar */
@@ -1371,4 +1817,46 @@ button {
 ::selection {
     background: rgba(0,212,255,0.3);
     color: #fff;
+}
+
+/* ==============================
+   Responsive — Practice Sections
+   ============================== */
+
+@media (max-width: 600px) {
+    .practice-card,
+    .challenge-card,
+    .results-card {
+        padding: 24px 20px;
+    }
+
+    .practice-answer-row,
+    .challenge-answer-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .practice-input {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .challenge-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .practice-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .results-score-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .results-score-circle span {
+        font-size: 1.5rem;
+    }
 }
