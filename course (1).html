@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course — NovaMath</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Exo+2:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="particles"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">∑</span>
+        <span class="logo-text">Nova<span class="accent">Math</span></span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="course-hero">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span id="breadcrumb-course">Course</span>
+      </div>
+
+      <div class="course-hero-content">
+        <div class="course-hero-icon"><span></span></div>
+        <div class="course-hero-info">
+          <h1></h1>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="course-progress-bar">
+        <div class="progress-label">
+          <span>Course Progress</span>
+          <span class="progress-pct">0%</span>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="units-section"></section>
+
+    <section class="section" id="course-practice-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CHALLENGE</span>
+          <h2 class="section-title">Course Practice Challenge</h2>
+          <p class="section-desc">Test your knowledge across all units in this course.</p>
+        </div>
+
+        <div class="challenge-controls">
+          <button id="challenge-start" class="btn btn-primary">Start Challenge</button>
+          <button id="challenge-reset" class="btn btn-outline" style="display:none;">Reset</button>
+        </div>
+
+        <div class="challenge-workspace" id="challenge-workspace" style="display:none;">
+          <div class="challenge-card">
+            <div class="challenge-progress-bar">
+              <div class="challenge-progress-fill" id="challenge-progress-fill"></div>
+            </div>
+            <div class="challenge-meta">
+              <span class="challenge-counter">Question <span id="ch-current">1</span> / <span id="ch-total">10</span></span>
+              <span class="challenge-streak">Streak: <span id="ch-streak">0</span> 🔥</span>
+              <span class="challenge-score">Score: <span id="ch-score">0</span> / <span id="ch-max">10</span></span>
+            </div>
+            <div class="challenge-question" id="ch-question"></div>
+            <div class="challenge-hint" id="ch-hint"></div>
+            <div class="challenge-answer-row">
+              <input type="text" id="ch-answer" class="practice-input" placeholder="Your answer">
+              <button id="ch-check" class="btn btn-primary">Check</button>
+              <button id="ch-hint-btn" class="btn btn-outline">Hint</button>
+              <button id="ch-skip" class="btn btn-outline">Skip</button>
+            </div>
+            <div class="challenge-feedback" id="ch-feedback"></div>
+          </div>
+        </div>
+
+        <div class="challenge-results" id="challenge-results" style="display:none;">
+          <div class="results-card">
+            <h3 class="results-title">Challenge Complete!</h3>
+            <div class="results-score-circle">
+              <span id="results-pct">0%</span>
+            </div>
+            <p class="results-summary" id="results-summary"></p>
+            <div class="results-breakdown" id="results-breakdown"></div>
+            <button id="challenge-restart" class="btn btn-primary">Try Again</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson — NovaMath</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Exo+2:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="particles"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">∑</span>
+        <span class="logo-text">Nova<span class="accent">Math</span></span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="lesson-page">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <a id="bc-course-link" href="#"><span id="bc-course"></span></a>
+      <span class="breadcrumb-sep">/</span>
+      <span id="bc-lesson" class="current"></span>
+    </div>
+
+    <div class="lesson-header">
+      <h1></h1>
+      <p></p>
+    </div>
+
+    <div class="lesson-content-area"></div>
+
+    <section class="practice-section" style="display:none;">
+      <div class="practice-section-header">
+        <h2>Practice Problems</h2>
+        <div class="practice-section-tools">
+          <button id="show-all-hints" class="btn btn-outline btn-sm">Show All Hints</button>
+          <div class="practice-score-badge">
+            <span id="score-fraction">0 / 0</span>
+            <span id="score-pct">0%</span>
+          </div>
+        </div>
+      </div>
+      <div class="practice-problems"></div>
+      <div class="practice-summary" id="practice-summary" style="display:none;">
+        <div class="summary-card">
+          <span class="summary-icon">🎉</span>
+          <span class="summary-text" id="summary-text">All problems completed!</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="lesson-nav">
+      <button id="prev-lesson" class="btn btn-outline">← Previous</button>
+      <button id="mark-complete" class="btn btn-primary">Mark Complete</button>
+      <button id="next-lesson" class="btn btn-outline">Next →</button>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaMath</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Exo+2:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="particles"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">∑</span>
+        <span class="logo-text">Nova<span class="accent">Math</span></span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-badge">INTERACTIVE LEARNING</span>
+        <h1 class="hero-title">Master Math, <span class="gradient-text">Step by Step</span></h1>
+        <p class="hero-subtitle">Interactive lessons, practice problems, and progress tracking to help you excel in mathematics.</p>
+        <div class="hero-actions">
+          <a href="#courses" class="btn btn-primary btn-lg">Start Learning <span class="btn-arrow">→</span></a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-target="4">4</span>
+            <span class="stat-label">Courses</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="11">11</span>
+            <span class="stat-label">Units</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-target="50">50+</span>
+            <span class="stat-label">Practice Problems</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbit-system">
+          <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+          <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+          <div class="orbit orbit-3"><div class="orbit-dot"></div></div>
+          <div class="orbit-center">
+            <span class="math-symbol">π</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="courses">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">COURSES</span>
+          <h2 class="section-title">Choose Your Path</h2>
+          <p class="section-desc">From algebra fundamentals to advanced precalculus concepts.</p>
+        </div>
+
+        <div class="courses-grid">
+          <div class="course-card" data-course="algebra1">
+            <div class="card-glow"></div>
+            <div class="card-header">
+              <div class="course-icon algebra1-icon">A1</div>
+              <span class="course-level">Beginner</span>
+            </div>
+            <h3 class="course-title">Algebra 1</h3>
+            <p class="course-desc">Master the fundamentals of algebra: equations, inequalities, functions, and more.</p>
+            <div class="course-meta">
+              <span class="meta-item"><span class="meta-icon">◆</span> 3 Units</span>
+              <span class="meta-item"><span class="meta-icon">◇</span> 8 Lessons</span>
+            </div>
+            <div class="card-footer">
+              <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 0%"></div>
+              </div>
+              <span class="card-cta">Start Course →</span>
+            </div>
+          </div>
+
+          <div class="course-card" data-course="algebra2">
+            <div class="card-glow"></div>
+            <div class="card-header">
+              <div class="course-icon algebra2-icon">A2</div>
+              <span class="course-level">Intermediate</span>
+            </div>
+            <h3 class="course-title">Algebra 2</h3>
+            <p class="course-desc">Advanced algebra including quadratics, polynomials, exponentials, and logarithms.</p>
+            <div class="course-meta">
+              <span class="meta-item"><span class="meta-icon">◆</span> 3 Units</span>
+              <span class="meta-item"><span class="meta-icon">◇</span> 7 Lessons</span>
+            </div>
+            <div class="card-footer">
+              <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 0%"></div>
+              </div>
+              <span class="card-cta">Start Course →</span>
+            </div>
+          </div>
+
+          <div class="course-card" data-course="geometry">
+            <div class="card-glow"></div>
+            <div class="card-header">
+              <div class="course-icon geometry-icon">G</div>
+              <span class="course-level">Intermediate</span>
+            </div>
+            <h3 class="course-title">Geometry</h3>
+            <p class="course-desc">Explore shapes, angles, proofs, triangles, circles, and spatial reasoning.</p>
+            <div class="course-meta">
+              <span class="meta-item"><span class="meta-icon">◆</span> 3 Units</span>
+              <span class="meta-item"><span class="meta-icon">◇</span> 7 Lessons</span>
+            </div>
+            <div class="card-footer">
+              <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 0%"></div>
+              </div>
+              <span class="card-cta">Start Course →</span>
+            </div>
+          </div>
+
+          <div class="course-card" data-course="precalculus">
+            <div class="card-glow"></div>
+            <div class="card-header">
+              <div class="course-icon precalc-icon">P</div>
+              <span class="course-level">Advanced</span>
+            </div>
+            <h3 class="course-title">Precalculus</h3>
+            <p class="course-desc">Prepare for calculus with trigonometry, complex numbers, and sequences.</p>
+            <div class="course-meta">
+              <span class="meta-item"><span class="meta-icon">◆</span> 3 Units</span>
+              <span class="meta-item"><span class="meta-icon">◇</span> 7 Lessons</span>
+            </div>
+            <div class="card-footer">
+              <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 0%"></div>
+              </div>
+              <span class="card-cta">Start Course →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="practice">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PRACTICE</span>
+          <h2 class="section-title">Quick Practice</h2>
+          <p class="section-desc">Pick a topic and sharpen your skills with instant feedback.</p>
+        </div>
+
+        <div class="practice-controls">
+          <select id="practice-topic" class="practice-select">
+            <option value="mixed">Mixed Topics</option>
+            <option value="algebra1">Algebra 1</option>
+            <option value="algebra2">Algebra 2</option>
+            <option value="geometry">Geometry</option>
+            <option value="precalculus">Precalculus</option>
+          </select>
+          <button id="new-problem" class="btn btn-outline">New Problem</button>
+        </div>
+
+        <div class="practice-workspace" id="practice-workspace">
+          <div class="practice-card">
+            <div class="practice-progress">
+              <span class="practice-counter">Problem <span id="prob-current">1</span> / <span id="prob-total">5</span></span>
+              <span class="practice-score">Score: <span id="prob-score">0</span></span>
+            </div>
+            <div class="practice-question" id="prob-question">Select a topic and click "New Problem" to begin.</div>
+            <div class="practice-answer-row">
+              <input type="text" id="prob-answer" class="practice-input" placeholder="Your answer">
+              <button id="prob-check" class="btn btn-primary">Check</button>
+            </div>
+            <div class="practice-feedback" id="prob-feedback"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.querySelectorAll('.course-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const course = card.dataset.course;
+        window.location.href = `course.html?course=${course}`;
+      });
+    });
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
