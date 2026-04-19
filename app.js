@@ -17,13 +17,9 @@ const courses = {
               { q: "Evaluate 3(a+b) when a=2, b=4", a: "18", h: "First add a+b=6, then multiply by 3" },
               { q: "Evaluate 5x-2y when x=3, y=1", a: "13", h: "5(3)-2(1) = 15-2" },
               { q: "Evaluate x/2+4 when x=10", a: "9", h: "10/2+4 = 5+4" },
-              { q: "Evaluate 7a+3 when a=2", a: "17", h: "7(2)+3 = 14+3" },
-              { q: "Evaluate 3m-8 when m=5", a: "7", h: "3(5)-8 = 15-8" },
-              { q: "Evaluate n²-4n when n=3", a: "-3", h: "(3)²-4(3) = 9-12" },
-              { q: "Evaluate 2(p+q+r) when p=1,q=2,r=3", a: "12", h: "First add: 1+2+3=6, then multiply by 2" },
-              { q: "Evaluate 10-3x when x=2", a: "4", h: "10-3(2) = 10-6" },
-              { q: "Evaluate (x+5)(x-2) when x=3", a: "8", h: "(3+5)(3-2) = 8×1" },
-              { q: "Evaluate x³+1 when x=2", a: "9", h: "(2)³+1 = 8+1" }
+              { q: "Evaluate 6x-4 when x=2", a: "8", h: "6(2)-4" },
+              { q: "Evaluate 2a+3b when a=3, b=2", a: "12", h: "2(3)+3(2)" },
+              { q: "Evaluate (x+y)² when x=3, y=1", a: "16", h: "(3+1)² = 4²" }
             ]
           },
           {
@@ -36,12 +32,9 @@ const courses = {
               { q: "Simplify: 2³×3-5", a: "19", h: "Exponent first: 8×3-5 = 24-5" },
               { q: "Simplify: (12-4)÷2+6", a: "10", h: "Parentheses first: 8÷2+6 = 4+6" },
               { q: "Simplify: 15÷3+2×4", a: "13", h: "Division and multiplication left to right: 5+8" },
-              { q: "Simplify: (3+2)×(6-4)", a: "10", h: "Parentheses first: 5×2" },
-              { q: "Simplify: 4²-3×2+1", a: "11", h: "Exponent first: 16-6+1" },
-              { q: "Simplify: 18÷(1+2)×2", a: "12", h: "Parentheses first: 18÷3×2 = 6×2" },
-              { q: "Simplify: 5+4²÷8", a: "7", h: "Exponent first: 5+16÷8 = 5+2" },
-              { q: "Simplify: (7-3)²÷(5-3)", a: "8", h: "Parentheses: 4²÷2 = 16÷2" },
-              { q: "Simplify: 20-4×2²", a: "4", h: "Exponent first: 20-4×4 = 20-16" }
+              { q: "Simplify: 5×2+3²", a: "19", h: "5×2+9 = 10+9" },
+              { q: "Simplify: 20÷(4+1)×3", a: "12", h: "20÷5×3 = 4×3" },
+              { q: "Simplify: 4+3²×2", a: "22", h: "Exponent: 9×2=18, 4+18" }
             ]
           },
           {
@@ -53,11 +46,8 @@ const courses = {
               { q: "Simplify: 5+3(x-2)", a: "3x-1", alt: ["3x - 1"], h: "Distribute: 5+3x-6, then combine" },
               { q: "Use distributive property: -2(x-4)", a: "-2x+8", alt: ["-2x + 8"], h: "Multiply -2 by each term" },
               { q: "Simplify: 3(2x+1)-2(x-3)", a: "4x+9", alt: ["4x + 9"], h: "Distribute both: 6x+3-2x+6, then combine" },
-              { q: "Use distributive property: 5(2x-y)", a: "10x-5y", alt: ["10x - 5y"], h: "Multiply 5 by each term" },
-              { q: "Simplify: -(x+3)", a: "-x-3", alt: ["-x - 3"], h: "Distribute -1 to each term" },
-              { q: "Simplify: 2x+3(x+4)", a: "5x+12", alt: ["5x + 12"], h: "Distribute: 2x+3x+12, combine" },
-              { q: "Use distributive property: x(x+5)", a: "x²+5x", alt: ["x^2+5x","x² + 5x"], h: "Multiply x by each term" },
-              { q: "Simplify: 4(2x-1)-3x", a: "5x-4", alt: ["5x - 4"], h: "Distribute: 8x-4-3x, combine" }
+              { q: "Simplify: 3(x+2y)-2(x-y)", a: "x+8y", alt: ["x + 8y"], h: "3x+6y-2x+2y" },
+              { q: "Factor out 5: 5x+15", a: "5(x+3)", alt: ["5(x + 3)"], h: "Divide both terms by 5" }
             ]
           }
         ]
@@ -75,12 +65,9 @@ const courses = {
               { q: "Solve: x/3=6", a: "18", h: "Multiply both sides by 3" },
               { q: "Solve: x+2.5=8", a: "5.5", alt: ["11/2"], h: "Subtract 2.5 from both sides" },
               { q: "Solve: 2x=11", a: "5.5", alt: ["11/2"], h: "Divide both sides by 2" },
-              { q: "Solve: x-9=4", a: "13", h: "Add 9 to both sides" },
-              { q: "Solve: x+12=7", a: "-5", h: "Subtract 12 from both sides" },
-              { q: "Solve: x/5=3", a: "15", h: "Multiply both sides by 5" },
-              { q: "Solve: 8x=64", a: "8", h: "Divide both sides by 8" },
-              { q: "Solve: x-0.5=2.5", a: "3", h: "Add 0.5 to both sides" },
-              { q: "Solve: x/4=-2", a: "-8", h: "Multiply both sides by 4" }
+              { q: "Solve: x/4=5", a: "20", h: "Multiply both sides by 4" },
+              { q: "Solve: 6x=42", a: "7", h: "Divide both sides by 6" },
+              { q: "Solve: x-9=15", a: "24", h: "Add 9 to both sides" }
             ]
           },
           {
@@ -93,12 +80,9 @@ const courses = {
               { q: "Solve: x/2+4=10", a: "12", h: "Subtract 4, then multiply by 2" },
               { q: "Solve: 4x-5=19", a: "6", h: "Add 5, then divide by 4" },
               { q: "Solve: 3x+2.5=14.5", a: "4", h: "Subtract 2.5, then divide by 3" },
-              { q: "Solve: 6x+1=31", a: "5", h: "Subtract 1, then divide by 6" },
-              { q: "Solve: x/3-5=2", a: "21", h: "Add 5, then multiply by 3" },
-              { q: "Solve: 2x+9=1", a: "-4", h: "Subtract 9, then divide by 2" },
-              { q: "Solve: 7x-3=18", a: "3", h: "Add 3, then divide by 7" },
-              { q: "Solve: x/5+2=6", a: "20", h: "Subtract 2, then multiply by 5" },
-              { q: "Solve: 9x+4=40", a: "4", h: "Subtract 4, then divide by 9" }
+              { q: "Solve: 4x+3=19", a: "4", h: "Subtract 3, divide by 4" },
+              { q: "Solve: x/5-2=3", a: "25", h: "Add 2, multiply by 5" },
+              { q: "Solve: 7x-10=32", a: "6", h: "Add 10, divide by 7" }
             ]
           },
           {
@@ -111,11 +95,9 @@ const courses = {
               { q: "Solve: 5x-3=2x+9", a: "4", h: "Subtract 2x, add 3: 3x=12" },
               { q: "Solve: 2(3x-1)=4(x+3)", a: "7", h: "Distribute: 6x-2=4x+12" },
               { q: "Solve: 7x+4=3x+20", a: "4", h: "Subtract 3x, subtract 4: 4x=16" },
-              { q: "Solve: 5(x+1)=3(x+5)", a: "5", h: "Distribute: 5x+5=3x+15" },
-              { q: "Solve: 8x-5=3x+15", a: "4", h: "Subtract 3x, add 5: 5x=20" },
-              { q: "Solve: 2(x-4)=x+1", a: "9", h: "Distribute: 2x-8=x+1" },
-              { q: "Solve: 4x+7=x+22", a: "5", h: "Subtract x, subtract 7: 3x=15" },
-              { q: "Solve: 3(2x+3)=5x+14", a: "5", h: "Distribute: 6x+9=5x+14" }
+              { q: "Solve: 3(x+4)-x=16", a: "2", h: "3x+12-x=16 → 2x=4" },
+              { q: "Solve: 2(x-3)+4x=18", a: "4", h: "2x-6+4x=18 → 6x=24" },
+              { q: "Solve: 5x-2(x+1)=10", a: "4", h: "5x-2x-2=10 → 3x=12" }
             ]
           }
         ]
@@ -133,36 +115,23 @@ const courses = {
               { q: "Find slope through (2,5) and (6,5)", a: "0", h: "(5-5)/(6-2) = 0/4" },
               { q: "Find slope of 2x+3y=6", a: "-2/3", alt: ["-0.667"], h: "Solve for y: y=(-2/3)x+2" },
               { q: "Find slope through (-1,3) and (2,-3)", a: "-2", h: "(-3-3)/(2-(-1)) = -6/3" },
-              { q: "Find slope through (3,1) and (5,9)", a: "4", h: "(9-1)/(5-3) = 8/2" },
-              { q: "Find slope of y=-x+4", a: "-1", h: "In y=mx+b, m is the coefficient of x" },
-              { q: "Find slope through (0,5) and (4,1)", a: "-1", h: "(1-5)/(4-0) = -4/4" },
-              { q: "Find slope of x-2y=8", a: "1/2", alt: ["0.5"], h: "Solve for y: y=(1/2)x-4" },
-              { q: "Find slope through (-2,-1) and (2,7)", a: "2", h: "(7-(-1))/(2-(-2)) = 8/4" },
-              { q: "Find slope through (3,4) and (7,4)", a: "0", h: "Horizontal line has slope 0" },
-              { q: "Find slope of y=(2/3)x-1", a: "2/3", alt: ["0.667"], h: "In y=mx+b, m is the coefficient of x" },
-              { q: "Find slope through (1,-3) and (4,3)", a: "2", h: "(3-(-3))/(4-1) = 6/3" },
-              { q: "Find slope of 4x-y=3", a: "4", h: "Solve for y: y=4x-3" }
+              { q: "Find slope through (-2,1) and (2,9)", a: "2", h: "(9-1)/(2-(-2)) = 8/4" },
+              { q: "Find slope of 4x-2y=8", a: "2", h: "Solve for y: -2y=-4x+8 → y=2x-4" },
+              { q: "Find slope through (0,-3) and (5,2)", a: "1", h: "(2-(-3))/(5-0) = 5/5" }
             ]
           },
           {
             title: "Slope-Intercept Form",
             content: `<h2>y=mx+b</h2><p>• m=slope</p><p>• b=y-intercept</p><div class="example"><div class="example-label">Example</div><p>y=2x+3 has slope 2 and y-intercept at (0,3)</p></div>`,
             practice: [
-              { q: "Find slope and y-intercept of y=4x-2", a: "m=4,b=-2", alt: ["4,-2","slope 4, y-int -2"], h: "Compare to y=mx+b" },
+              { q: "Find slope and y-intercept of y=4x-2", a: "m=4,b=-2", alt: ["4,-2", "slope 4, y-int -2"], h: "Compare to y=mx+b" },
               { q: "Write equation with slope 3, y-intercept 5", a: "y=3x+5", alt: ["y = 3x + 5"], h: "Plug m=3 and b=5 into y=mx+b" },
               { q: "Convert to slope-intercept: 2x+y=6", a: "y=-2x+6", alt: ["y = -2x + 6"], h: "Solve for y: subtract 2x from both sides" },
               { q: "Find y-intercept of y=-x+7", a: "7", h: "The constant term b is the y-intercept" },
               { q: "Write equation with slope -2 through (0,4)", a: "y=-2x+4", alt: ["y = -2x + 4"], h: "m=-2, b=4 (since (0,4) is the y-intercept)" },
-              { q: "Find slope and y-intercept of y=(1/2)x+3", a: "m=1/2,b=3", alt: ["0.5,3"], h: "Compare to y=mx+b" },
-              { q: "Convert to slope-intercept: x+y=5", a: "y=-x+5", alt: ["y = -x + 5"], h: "Subtract x from both sides" },
-              { q: "Write equation with slope 5, y-intercept -1", a: "y=5x-1", alt: ["y = 5x - 1"], h: "Plug m=5 and b=-1 into y=mx+b" },
-              { q: "Find slope and y-intercept of y=3x", a: "m=3,b=0", alt: ["3,0"], h: "y=3x+0, so b=0" },
-              { q: "Convert to slope-intercept: 3x-2y=8", a: "y=(3/2)x-4", alt: ["y=1.5x-4","y = (3/2)x - 4"], h: "Solve for y: -2y=-3x+8, y=(3/2)x-4" },
-              { q: "Write equation with slope -3 through (0,2)", a: "y=-3x+2", alt: ["y = -3x + 2"], h: "m=-3, b=2 (point (0,2))" },
-              { q: "Find y-intercept of y=2x-5", a: "-5", h: "The constant term b is the y-intercept" },
-              { q: "Convert to slope-intercept: 4x+2y=10", a: "y=-2x+5", alt: ["y = -2x + 5"], h: "Solve for y: 2y=-4x+10, y=-2x+5" },
-              { q: "Write equation with slope 1/4, y-intercept 2", a: "y=(1/4)x+2", alt: ["y=0.25x+2","y = (1/4)x + 2"], h: "Plug m=1/4 and b=2 into y=mx+b" },
-              { q: "Find slope and y-intercept of y=-(2/3)x+1", a: "m=-2/3,b=1", alt: ["-0.667,1"], h: "Compare to y=mx+b" }
+              { q: "Find slope and y-intercept of y=-3x+5", a: "m=-3,b=5", alt: ["-3,5"], h: "Compare to y=mx+b" },
+              { q: "Write equation with slope -1/2, y-intercept 3", a: "y=-0.5x+3", alt: ["y=-1/2x+3", "y = -0.5x + 3"], h: "y=mx+b" },
+              { q: "Find x-intercept of y=2x-6", a: "3", h: "Set y=0: 0=2x-6 → 2x=6" }
             ]
           }
         ]
@@ -181,18 +150,15 @@ const courses = {
             title: "Solving by Factoring",
             content: `<h2>Zero Product Property</h2><p>If ab=0, then a=0 or b=0</p><div class="formula">x²+5x+6=(x+2)(x+3)</div><div class="example"><div class="example-label">Example</div><p>Solve: x²-5x+6=0 → (x-2)(x-3)=0 → x=2 or x=3</p></div>`,
             practice: [
-              { q: "Solve: x²-9=0", a: "3,-3", alt: ["-3,3","±3"], h: "Difference of squares: (x-3)(x+3)=0" },
+              { q: "Solve: x²-9=0", a: "3,-3", alt: ["-3,3", "±3"], h: "Difference of squares: (x-3)(x+3)=0" },
               { q: "Solve: x²+5x+6=0", a: "-2,-3", alt: ["-3,-2"], h: "Find two numbers that multiply to 6 and add to 5" },
               { q: "Solve: x²-7x+12=0", a: "3,4", alt: ["4,3"], h: "Find two numbers that multiply to 12 and add to -7" },
               { q: "Solve: x²+2x-8=0", a: "2,-4", alt: ["-4,2"], h: "Find two numbers that multiply to -8 and add to 2" },
               { q: "Solve: x²-x-6=0", a: "3,-2", alt: ["-2,3"], h: "Find two numbers that multiply to -6 and add to -1" },
               { q: "Factor: x²+8x+15", a: "(x+3)(x+5)", alt: ["(x+5)(x+3)"], h: "Find two numbers that multiply to 15 and add to 8" },
-              { q: "Solve: x²-16=0", a: "4,-4", alt: ["-4,4","±4"], h: "Difference of squares: (x-4)(x+4)=0" },
-              { q: "Solve: x²+10x+21=0", a: "-3,-7", alt: ["-7,-3"], h: "Find two numbers that multiply to 21 and add to 10" },
-              { q: "Factor: x²-6x+8", a: "(x-2)(x-4)", alt: ["(x-4)(x-2)"], h: "Find two numbers that multiply to 8 and add to -6" },
-              { q: "Solve: x²+4x-12=0", a: "2,-6", alt: ["-6,2"], h: "Find two numbers that multiply to -12 and add to 4" },
-              { q: "Solve: x²-2x-15=0", a: "5,-3", alt: ["-3,5"], h: "Find two numbers that multiply to -15 and add to -2" },
-              { q: "Factor: x²-12x+36", a: "(x-6)²", alt: ["(x-6)(x-6)"], h: "Perfect square trinomial" }
+              { q: "Solve: x²-4x=0", a: "0,4", alt: ["4,0"], h: "Factor: x(x-4)=0" },
+              { q: "Solve: 2x²-8=0", a: "2,-2", alt: ["-2,2", "±2"], h: "x²=4" },
+              { q: "Factor: x²-6x+9", a: "(x-3)²", alt: ["(x-3)^2"], h: "Perfect square trinomial" }
             ]
           },
           {
@@ -200,17 +166,13 @@ const courses = {
             content: `<h2>The Quadratic Formula</h2><p>For ax²+bx+c=0:</p><div class="formula">x=(-b±√(b²-4ac))/2a</div><div class="example"><div class="example-label">Example</div><p>x²+4x+3=0 → x=(-4±√(16-12))/2 → x=-1 or x=-3</p></div>`,
             practice: [
               { q: "Solve: x²+6x+5=0", a: "-1,-5", alt: ["-5,-1"], h: "a=1, b=6, c=5. x=(-6±√(36-20))/2" },
-              { q: "Solve: 2x²-5x+2=0", a: "2,0.5", alt: ["0.5,2","2,1/2","1/2,2"], h: "a=2, b=-5, c=2. x=(5±√(25-16))/4" },
+              { q: "Solve: 2x²-5x+2=0", a: "2,0.5", alt: ["0.5,2", "2,1/2", "1/2,2"], h: "a=2, b=-5, c=2. x=(5±√(25-16))/4" },
               { q: "Solve: x²-4x+4=0", a: "2", alt: ["2,2"], h: "a=1, b=-4, c=4. x=(4±√(16-16))/2" },
               { q: "Find discriminant of x²+3x+2=0", a: "1", h: "b²-4ac = 9-8" },
               { q: "Solve: x²+2x-3=0", a: "1,-3", alt: ["-3,1"], h: "a=1, b=2, c=-3. x=(-2±√(4+12))/2" },
-              { q: "Find discriminant of x²-5x+6=0", a: "1", h: "b²-4ac = 25-24" },
-              { q: "Solve: 3x²+x-2=0", a: "2/3,-1", alt: ["0.667,-1","-1,2/3"], h: "a=3, b=1, c=-2. x=(-1±√(1+24))/6" },
-              { q: "Solve: x²-8x+16=0", a: "4", alt: ["4,4"], h: "a=1, b=-8, c=16. x=(8±√(64-64))/2" },
-              { q: "Find discriminant of 2x²+3x+5=0", a: "-31", h: "b²-4ac = 9-40" },
-              { q: "Solve: x²+7x+10=0", a: "-2,-5", alt: ["-5,-2"], h: "a=1, b=7, c=10. x=(-7±√(49-40))/2" },
-              { q: "Solve: x²-3x-10=0", a: "5,-2", alt: ["-2,5"], h: "a=1, b=-3, c=-10. x=(3±√(9+40))/2" },
-              { q: "Find discriminant of x²+4x+5=0", a: "4", h: "b²-4ac = 16-20 = -4... wait, that's -4. Let me recalculate: 16-20=-4. Answer: -4" }
+              { q: "Solve: x²-6x+8=0", a: "2,4", alt: ["4,2"], h: "a=1,b=-6,c=8. x=(6±√4)/2" },
+              { q: "Find discriminant of 2x²+3x-2=0", a: "25", h: "b²-4ac = 9-4(2)(-2) = 9+16" },
+              { q: "Solve: 3x²-12=0", a: "2,-2", alt: ["-2,2"], h: "x²=4" }
             ]
           },
           {
@@ -221,13 +183,9 @@ const courses = {
               { q: "Find vertex of y=2(x+1)²-4", a: "(-1,-4)", alt: ["-1,-4"], h: "Rewrite: y=2(x-(-1))²+(-4)" },
               { q: "Find axis of symmetry: y=(x-5)²+1", a: "x=5", alt: ["5"], h: "Axis of symmetry is x=h" },
               { q: "Convert to vertex form: y=x²+4x+5", a: "y=(x+2)²+1", alt: ["y=(x+2)^2+1"], h: "Complete the square: x²+4x+4+1 = (x+2)²+1" },
-              { q: "Find vertex of y=(x+3)²-2", a: "(-3,-2)", alt: ["-3,-2"], h: "In y=a(x-h)²+k, vertex is (h,k)" },
-              { q: "Find axis of symmetry: y=3(x-1)²+4", a: "x=1", alt: ["1"], h: "Axis of symmetry is x=h" },
-              { q: "Convert to vertex form: y=x²-6x+8", a: "y=(x-3)²-1", alt: ["y=(x-3)^2-1"], h: "Complete the square: x²-6x+9-1 = (x-3)²-1" },
-              { q: "Find vertex of y=-(x-4)²+2", a: "(4,2)", alt: ["4,2"], h: "In y=a(x-h)²+k, vertex is (h,k)" },
-              { q: "Convert to vertex form: y=x²+2x", a: "y=(x+1)²-1", alt: ["y=(x+1)^2-1"], h: "Complete the square: x²+2x+1-1 = (x+1)²-1" },
-              { q: "Find axis of symmetry: y=(x+2)²+5", a: "x=-2", alt: ["-2"], h: "Axis of symmetry is x=h = -2" },
-              { q: "Convert to vertex form: y=x²-2x+3", a: "y=(x-1)²+2", alt: ["y=(x-1)^2+2"], h: "Complete the square: x²-2x+1+2 = (x-1)²+2" }
+              { q: "Find vertex of y=-(x+2)²+5", a: "(-2,5)", alt: ["-2,5"], h: "h=-2, k=5" },
+              { q: "Convert to vertex: y=x²-6x+10", a: "y=(x-3)²+1", alt: ["y=(x-3)^2+1"], h: "Complete square: x²-6x+9+1" },
+              { q: "Find axis of symmetry: y=3(x-4)²-2", a: "x=4", alt: ["4"], h: "x=h" }
             ]
           }
         ]
@@ -243,20 +201,9 @@ const courses = {
               { q: "Subtract: (5x²+3x)-(2x²+x)", a: "3x²+2x", alt: ["3x^2+2x"], h: "Distribute negative: 5x²+3x-2x²-x" },
               { q: "Find degree of: 3x⁴+2x²-5", a: "4", h: "The degree is the highest power of x" },
               { q: "Add: (2x+3)+(x-5)", a: "3x-2", alt: ["3x - 2"], h: "Combine like terms: 2x+x, 3-5" },
-              { q: "Subtract: (4x²+7x+3)-(x²+2x+1)", a: "3x²+5x+2", alt: ["3x^2+5x+2"], h: "Distribute negative and combine" },
-              { q: "Find degree of: x³+5x⁵-2x+1", a: "5", h: "The degree is the highest power of x" },
-              { q: "Add: (x²+3x+2)+(2x²-x+4)", a: "3x²+2x+6", alt: ["3x^2+2x+6"], h: "Combine like terms" },
-              { q: "Subtract: (7x³+2x)-(3x³+5x)", a: "4x³-3x", alt: ["4x^3-3x"], h: "Distribute negative: 7x³+2x-3x³-5x" },
-              { q: "Find degree of: 2x+7", a: "1", h: "The highest power of x is x¹" },
-              { q: "Add: (5x³+2x²+x)+(x³-3x²+4x)", a: "6x³-x²+5x", alt: ["6x^3-x^2+5x"], h: "Combine like terms" },
-              { q: "Subtract: (x²+4x+7)-(x²+2x+3)", a: "2x+4", h: "Distribute negative: x²+4x+7-x²-2x-3" },
-              { q: "Find degree of: 9", a: "0", h: "Constant polynomial has degree 0" },
-              { q: "Add: (2x²-5x+1)+(3x²+5x-1)", a: "5x²", alt: ["5x^2"], h: "Combine: the -5x and +5x cancel, 1 and -1 cancel" },
-              { q: "Subtract: (6x²+3x)-(2x²+7x)", a: "4x²-4x", alt: ["4x^2-4x"], h: "Distribute negative and combine" },
-              { q: "Find degree of: x⁶-3x²+x-1", a: "6", h: "The degree is the highest power of x" },
-              { q: "Add: (x+1)+(x+2)+(x+3)", a: "3x+6", alt: ["3x + 6"], h: "Combine all x terms and constants" },
-              { q: "Subtract: (8x⁴+2x²)-(5x⁴+3x²+1)", a: "3x⁴-x²-1", alt: ["3x^4-x^2-1"], h: "Distribute negative and combine" },
-              { q: "Find degree of: 4x²y³+x³y² (in terms of x)", a: "3", h: "The highest power of x is 3 in x³y²" }
+              { q: "Multiply: (x+2)(x-3)", a: "x²-x-6", alt: ["x^2-x-6"], h: "FOIL: x²-3x+2x-6" },
+              { q: "Find degree: 5x³-2x+7", a: "3", h: "Highest power is 3" },
+              { q: "Expand: (x-4)²", a: "x²-8x+16", alt: ["x^2-8x+16"], h: "x²-4x-4x+16" }
             ]
           },
           {
@@ -266,20 +213,10 @@ const courses = {
               { q: "Divide x²-9 by (x-3)", a: "x+3", alt: ["x + 3"], h: "x²-9=(x-3)(x+3)" },
               { q: "Divide x²+7x+12 by (x+3)", a: "x+4", alt: ["x + 4"], h: "x²+7x+12=(x+3)(x+4)" },
               { q: "Find remainder: x²+3x+2 divided by (x-1)", a: "6", h: "Evaluate at x=1: 1+3+2" },
-              { q: "Is (x-2) a factor of x²-5x+6?", a: "yes", alt: ["Yes"], h: "Check: x=2 → 4-10+6=0, so yes" },
+              { q: "Is (x-2) a factor of x²-5x+6?", a: "yes", alt: ["Yes"], h: "Check if x=2 is a root: 4-10+6=0" },
               { q: "Divide 2x²+5x+2 by (x+2)", a: "2x+1", alt: ["2x + 1"], h: "Use polynomial long division" },
-              { q: "Find remainder: x²-4x+5 divided by (x-2)", a: "1", h: "Evaluate at x=2: 4-8+5" },
-              { q: "Divide x²+2x-15 by (x-3)", a: "x+5", alt: ["x + 5"], h: "x²+2x-15=(x-3)(x+5)" },
-              { q: "Is (x+1) a factor of x²+3x+2?", a: "yes", alt: ["Yes"], h: "Check: x=-1 → 1-3+2=0, so yes" },
-              { q: "Divide 3x²+10x+8 by (x+2)", a: "3x+4", alt: ["3x + 4"], h: "Use polynomial long division" },
-              { q: "Find remainder: x³-1 divided by (x-1)", a: "0", h: "Evaluate at x=1: 1-1=0" },
-              { q: "Divide x²-8x+15 by (x-5)", a: "x-3", alt: ["x - 3"], h: "x²-8x+15=(x-5)(x-3)" },
-              { q: "Is (x-4) a factor of x²-3x-10?", a: "no", alt: ["No"], h: "Check: x=4 → 16-12-10=-6≠0" },
-              { q: "Divide 2x²-x-10 by (x+2)", a: "2x-5", alt: ["2x - 5"], h: "Use polynomial long division" },
-              { q: "Find remainder: x²+5x+6 divided by (x+1)", a: "2", h: "Evaluate at x=-1: 1-5+6" },
-              { q: "Divide x²+4x+4 by (x+2)", a: "x+2", alt: ["x + 2"], h: "x²+4x+4=(x+2)²" },
-              { q: "Is (x+3) a factor of x²-x-12?", a: "yes", alt: ["Yes"], h: "Check: x=-3 → 9+3-12=0" },
-              { q: "Divide x³+8 by (x+2)", a: "x²-2x+4", alt: ["x^2-2x+4"], h: "Sum of cubes: a³+b³=(a+b)(a²-ab+b²)" }
+              { q: "Divide x²-5x+6 by (x-2)", a: "x-3", alt: ["x - 3"], h: "(x-2)(x-3)" },
+              { q: "Is (x+1) a factor of x²-1?", a: "yes", alt: ["Yes"], h: "Plug in x=-1: 1-1=0" }
             ]
           }
         ]
@@ -296,16 +233,10 @@ const courses = {
               { q: "Simplify: 2⁴×2³", a: "128", alt: ["2^7"], h: "Add exponents: 2^(4+3)=2^7" },
               { q: "Simplify: (3²)³", a: "729", alt: ["3^6"], h: "Multiply exponents: 3^(2×3)=3^6" },
               { q: "Solve: 2^x=16", a: "4", h: "16=2^4" },
-              { q: "Evaluate: 5⁻²", a: "0.04", alt: ["1/25",".04"], h: "5⁻²=1/5²=1/25" },
-              { q: "Evaluate: 4²", a: "16", h: "4×4" },
-              { q: "Evaluate: 2⁻³", a: "0.125", alt: ["1/8",".125"], h: "2⁻³=1/2³=1/8" },
-              { q: "Simplify: 5³×5²", a: "3125", alt: ["5^5"], h: "Add exponents: 5^(3+2)=5^5" },
-              { q: "Simplify: (2³)²", a: "64", alt: ["2^6"], h: "Multiply exponents: 2^(3×2)=2^6" },
-              { q: "Solve: 3^x=81", a: "4", h: "81=3^4" },
-              { q: "Evaluate: 10⁻¹", a: "0.1", alt: ["1/10",".1"], h: "10⁻¹=1/10" },
-              { q: "Simplify: x⁵·x³", a: "x⁸", alt: ["x^8"], h: "Add exponents: x^(5+3)" },
-              { q: "Evaluate: (1/2)⁻²", a: "4", h: "(1/2)⁻²=(2/1)²=4" },
-              { q: "Solve: 4^x=64", a: "3", h: "64=4^3" }
+              { q: "Evaluate: 5⁻²", a: "0.04", alt: ["1/25", ".04"], h: "5⁻²=1/5²=1/25" },
+              { q: "Solve: 3^x=27", a: "3", h: "27=3³" },
+              { q: "Evaluate: 10⁻¹", a: "0.1", alt: ["1/10"], h: "1/10¹" },
+              { q: "Solve: 4^x=64", a: "3", h: "4³=64" }
             ]
           },
           {
@@ -318,15 +249,9 @@ const courses = {
               { q: "Solve: log₂(x)=5", a: "32", h: "x=2^5" },
               { q: "Evaluate: log₅(25)", a: "2", h: "5^2=25" },
               { q: "Evaluate: ln(e)", a: "1", h: "ln is log base e, so ln(e)=1" },
-              { q: "Evaluate: log₂(32)", a: "5", h: "2^5=32" },
-              { q: "Evaluate: log₁₀(1)", a: "0", h: "10^0=1" },
-              { q: "Evaluate: log₄(64)", a: "3", h: "4^3=64" },
-              { q: "Solve: log₃(x)=4", a: "81", h: "x=3^4" },
-              { q: "Evaluate: log₇(49)", a: "2", h: "7^2=49" },
-              { q: "Evaluate: log₂(1)", a: "0", h: "2^0=1" },
-              { q: "Evaluate: log₆(216)", a: "3", h: "6^3=216" },
-              { q: "Solve: log₅(x)=3", a: "125", h: "x=5^3" },
-              { q: "Evaluate: log₁₀(1000000)", a: "6", h: "10^6=1,000,000" }
+              { q: "Evaluate: log₄(64)", a: "3", h: "4³=64" },
+              { q: "Solve: log₅(x)=2", a: "25", h: "x=5²" },
+              { q: "Evaluate: log₇(49)", a: "2", h: "7²=49" }
             ]
           }
         ]
@@ -345,23 +270,13 @@ const courses = {
             title: "Points, Lines, and Planes",
             content: `<h2>Basic Geometric Terms</h2><p>• <strong>Point:</strong> A location with no size</p><p>• <strong>Line:</strong> Infinite set of points</p><p>• <strong>Plane:</strong> Flat surface extending infinitely</p>`,
             practice: [
-              { q: "How many points define a line?", a: "2", alt: ["two","Two"], h: "Two distinct points determine a unique line" },
-              { q: "How many points define a plane?", a: "3", alt: ["three","Three"], h: "Three non-collinear points determine a plane" },
+              { q: "How many points define a line?", a: "2", alt: ["two", "Two"], h: "Two distinct points determine a unique line" },
+              { q: "How many points define a plane?", a: "3", alt: ["three", "Three"], h: "Three non-collinear points determine a plane" },
               { q: "True or False: A line has endpoints", a: "false", alt: ["False"], h: "A line extends infinitely in both directions" },
-              { q: "What is the intersection of two planes?", a: "line", alt: ["Line","a line"], h: "Two planes intersect in a line" },
-              { q: "How many lines pass through two distinct points?", a: "1", alt: ["one","One"], h: "Exactly one line passes through any two distinct points" },
-              { q: "True or False: A plane has edges", a: "false", alt: ["False"], h: "A plane extends infinitely in all directions" },
-              { q: "What is the intersection of two lines?", a: "point", alt: ["Point","a point"], h: "Two distinct lines intersect at a point (or are parallel)" },
-              { q: "How many planes contain a given line?", a: "infinite", alt: ["Infinite","infinitely many"], h: "A line can lie in infinitely many planes" },
-              { q: "True or False: Three collinear points define a plane", a: "false", alt: ["False"], h: "Collinear points lie on a line; need non-collinear points" },
-              { q: "What is a ray?", a: "part of a line with one endpoint", alt: ["line with one endpoint","half-line"], h: "A ray has one endpoint and extends infinitely in one direction" },
-              { q: "True or False: Skew lines intersect", a: "false", alt: ["False"], h: "Skew lines are non-coplanar and do not intersect" },
-              { q: "How many dimensions does a point have?", a: "0", alt: ["zero","Zero"], h: "A point has no size, only position" },
-              { q: "What is a line segment?", a: "part of a line with two endpoints", alt: ["segment","portion of a line"], h: "A segment has two distinct endpoints" },
-              { q: "True or False: Parallel lines are coplanar", a: "true", alt: ["True"], h: "Parallel lines lie in the same plane and never intersect" },
-              { q: "What is a postulate?", a: "assumption", alt: ["axiom","accepted statement"], h: "A postulate is a statement accepted without proof" },
-              { q: "Can three points be both collinear and coplanar?", a: "yes", alt: ["Yes"], h: "Any three collinear points are always coplanar" },
-              { q: "True or False: Opposite rays form a line", a: "true", alt: ["True"], h: "Opposite rays share an endpoint and point in opposite directions" }
+              { q: "What is the intersection of two planes?", a: "line", alt: ["Line", "a line"], h: "Two planes intersect in a line" },
+              { q: "How many lines pass through two distinct points?", a: "1", alt: ["one", "One"], h: "Exactly one line passes through any two distinct points" },
+              { q: "What is formed when two lines intersect?", a: "point", alt: ["Point"], h: "Lines cross at exactly one point" },
+              { q: "True or False: Parallel lines never intersect", a: "true", alt: ["True"], h: "By definition" }
             ]
           },
           {
@@ -374,18 +289,8 @@ const courses = {
               { q: "If angle A and B are complementary and A=25°, find B", a: "65", h: "90-25=65" },
               { q: "Find the angle that equals its own complement", a: "45", h: "x=90-x, so 2x=90, x=45" },
               { q: "Two supplementary angles: one is 30° more than other. Find smaller.", a: "75", h: "x+(x+30)=180, 2x=150, x=75" },
-              { q: "Find complement of 72°", a: "18", h: "90-72=18" },
-              { q: "Find supplement of 35°", a: "145", h: "180-35=145" },
-              { q: "Two angles form a linear pair. One is 110°. Find the other.", a: "70", h: "Linear pair angles are supplementary: 180-110" },
-              { q: "If two angles are complementary and one is twice the other, find the larger.", a: "60", h: "x+2x=90, 3x=90, x=30, larger=2x=60" },
-              { q: "Find the angle that equals its own supplement", a: "90", h: "x=180-x, so 2x=180, x=90" },
-              { q: "Two supplementary angles: one is 50° more than the other. Find larger.", a: "115", h: "x+(x+50)=180, 2x=130, x=65, larger=115" },
-              { q: "Angles in a ratio 2:3 are supplementary. Find the smaller.", a: "72", h: "2x+3x=180, 5x=180, x=36, smaller=2x=72" },
-              { q: "If alternate interior angles are congruent, the lines are...", a: "parallel", h: "Alternate interior angles congruent implies parallel lines" },
-              { q: "Find the supplement of an angle that is 20° more than its complement.", a: "125", h: "Let angle=x: (180-x)=(90-x)+20+90... Solve: x=55, supplement=125" },
-              { q: "Corresponding angles are equal when lines are...", a: "parallel", h: "Corresponding angles are equal when lines are parallel" },
-              { q: "Two angles are adjacent and form a right angle. One is 37°. Find the other.", a: "53", h: "90-37=53" },
-              { q: "The sum of interior angles on the same side of a transversal is...", a: "180", h: "Same-side interior angles are supplementary (sum to 180°)" }
+              { q: "Two angles are supplementary. One is 100°. Find the other.", a: "80", h: "180-100" },
+              { q: "An angle is 20° more than its supplement. Find the angle.", a: "100", h: "x+(x+20)=180 → 2x=160" }
             ]
           }
         ]
@@ -403,12 +308,8 @@ const courses = {
               { q: "Two angles are 45° each. Find third.", a: "90", h: "180-45-45" },
               { q: "Exterior angle is 110°. One remote interior is 40°. Find other.", a: "70", h: "110-40=70" },
               { q: "Find x: angles are 35°, x, and 2x", a: "48.33", alt: ["145/3"], h: "35+3x=180, 3x=145" },
-              { q: "Find third angle: 25°, 85°, ?", a: "70", h: "180-25-85" },
-              { q: "In isosceles triangle, base angles are 55° each. Find vertex.", a: "70", h: "180-55-55" },
-              { q: "Find x: angles are x, x+20°, x+40°", a: "40", h: "x+(x+20)+(x+40)=180, 3x+60=180" },
-              { q: "One angle is 3 times another, third is 20°. Find largest.", a: "120", h: "x+3x+20=180, 4x=160, x=40, largest=3x=120" },
-              { q: "Exterior angle is 135°. One remote interior is 65°. Find other.", a: "70", h: "135-65=70" },
-              { q: "Find x: angles are 2x, 3x, 4x", a: "20", h: "2x+3x+4x=180, 9x=180" }
+              { q: "Find third angle: 90°, 40°, ?", a: "50", h: "180-90-40" },
+              { q: "Exterior angle is 120°. Remote interiors are 50° and ?", a: "70", h: "120-50" }
             ]
           },
           {
@@ -421,29 +322,21 @@ const courses = {
               { q: "Is 3-4-6 a right triangle?", a: "no", alt: ["No"], h: "Check: 9+16=25≠36" },
               { q: "Find leg: hypotenuse 10, one leg 6", a: "8", h: "√(100-36)=√64" },
               { q: "Find hypotenuse: legs 9 and 12", a: "15", h: "√(81+144)=√225" },
-              { q: "Find hypotenuse: legs 7 and 24", a: "25", h: "√(49+576)=√625" },
-              { q: "Find missing leg: hypotenuse 17, one leg 8", a: "15", h: "√(289-64)=√225" },
-              { q: "Is 8-15-17 a right triangle?", a: "yes", alt: ["Yes"], h: "Check: 64+225=289=17²" },
-              { q: "Find hypotenuse: legs 20 and 21", a: "29", h: "√(400+441)=√841" },
-              { q: "Find leg: hypotenuse 25, one leg 7", a: "24", h: "√(625-49)=√576" },
-              { q: "Is 5-12-13 a right triangle?", a: "yes", alt: ["Yes"], h: "Check: 25+144=169=13²" }
+              { q: "Find leg: hypotenuse 15, one leg 9", a: "12", h: "√(225-81)=√144" },
+              { q: "Is 5-12-13 a right triangle?", a: "yes", alt: ["Yes"], h: "25+144=169" }
             ]
           },
           {
             title: "Special Right Triangles",
             content: `<h2>45-45-90 Triangle</h2><div class="formula">Leg=x, Hypotenuse=x√2</div><h2>30-60-90 Triangle</h2><div class="formula">Short leg=x<br>Long leg=x√3<br>Hypotenuse=2x</div>`,
             practice: [
-              { q: "In 45-45-90, leg=5, find hypotenuse", a: "5√2", alt: ["5sqrt2","7.07"], h: "Hypotenuse = leg×√2" },
+              { q: "In 45-45-90, leg=5, find hypotenuse", a: "5√2", alt: ["5sqrt2", "7.07"], h: "Hypotenuse = leg×√2" },
               { q: "In 30-60-90, short leg=4, find hypotenuse", a: "8", h: "Hypotenuse = 2×short leg" },
-              { q: "In 30-60-90, short leg=3, find long leg", a: "3√3", alt: ["3sqrt3","5.2"], h: "Long leg = short leg×√3" },
-              { q: "In 45-45-90, hypotenuse=10, find leg", a: "5√2", alt: ["5sqrt2","7.07"], h: "Leg = hypotenuse/√2 = 10/√2 = 5√2" },
+              { q: "In 30-60-90, short leg=3, find long leg", a: "3√3", alt: ["3sqrt3", "5.2"], h: "Long leg = short leg×√3" },
+              { q: "In 45-45-90, hypotenuse=10, find leg", a: "5√2", alt: ["5sqrt2", "7.07"], h: "Leg = hypotenuse/√2 = 10/√2 = 5√2" },
               { q: "In 30-60-90, hypotenuse=12, find short leg", a: "6", h: "Short leg = hypotenuse/2" },
-              { q: "In 45-45-90, leg=8, find hypotenuse", a: "8√2", alt: ["8sqrt2","11.31"], h: "Hypotenuse = leg×√2" },
-              { q: "In 30-60-90, short leg=6, find long leg", a: "6√3", alt: ["6sqrt3","10.39"], h: "Long leg = short leg×√3" },
-              { q: "In 30-60-90, hypotenuse=20, find long leg", a: "10√3", alt: ["10sqrt3","17.32"], h: "Short=10, long=10√3" },
-              { q: "In 45-45-90, hypotenuse=6√2, find leg", a: "6", h: "Leg = hypotenuse/√2 = 6√2/√2" },
-              { q: "In 30-60-90, long leg=5√3, find hypotenuse", a: "10", h: "Short=5, hyp=2×5" },
-              { q: "In 45-45-90, leg=3, find hypotenuse", a: "3√2", alt: ["3sqrt2","4.24"], h: "Hypotenuse = 3√2" }
+              { q: "In 30-60-90, long leg=6√3, find short leg", a: "6", h: "Long leg = short leg×√3" },
+              { q: "In 45-45-90, leg=8, find hypotenuse", a: "8√2", alt: ["8sqrt2", "11.31"], h: "leg×√2" }
             ]
           }
         ]
@@ -455,42 +348,27 @@ const courses = {
             title: "Circle Basics",
             content: `<h2>Circle Formulas</h2><div class="formula">C=2πr=πd<br>A=πr²</div><p>• r=radius (center to edge)</p><p>• d=diameter=2r</p>`,
             practice: [
-              { q: "Find circumference: r=5", a: "10π", alt: ["10pi","31.4"], h: "C=2πr=2π(5)" },
-              { q: "Find area: r=4", a: "16π", alt: ["16pi","50.27"], h: "A=πr²=π(16)" },
+              { q: "Find circumference: r=5", a: "10π", alt: ["10pi", "31.4"], h: "C=2πr=2π(5)" },
+              { q: "Find area: r=4", a: "16π", alt: ["16pi", "50.27"], h: "A=πr²=π(16)" },
               { q: "Find radius: diameter=14", a: "7", h: "r=d/2=14/2" },
-              { q: "Find area: diameter=10", a: "25π", alt: ["25pi","78.5"], h: "r=5, A=π(25)" },
-              { q: "Find circumference: d=8", a: "8π", alt: ["8pi","25.13"], h: "C=πd=π(8)" },
+              { q: "Find area: diameter=10", a: "25π", alt: ["25pi", "78.5"], h: "r=5, A=π(25)" },
+              { q: "Find circumference: d=8", a: "8π", alt: ["8pi", "25.13"], h: "C=πd=π(8)" },
               { q: "Find radius: circumference=12π", a: "6", h: "12π=2πr, so r=6" },
-              { q: "Find area: r=3", a: "9π", alt: ["9pi","28.27"], h: "A=πr²=π(9)" },
-              { q: "Find diameter: r=6.5", a: "13", h: "d=2r=2(6.5)" },
-              { q: "Find circumference: r=7", a: "14π", alt: ["14pi","43.98"], h: "C=2πr=2π(7)" },
-              { q: "Find area: circumference=4π", a: "4π", alt: ["4pi","12.57"], h: "4π=2πr, r=2, A=π(4)" },
-              { q: "Find radius: area=36π", a: "6", h: "36π=πr², r²=36, r=6" },
-              { q: "Find diameter: circumference=18π", a: "18", h: "18π=πd, d=18" },
-              { q: "Find circumference: area=25π", a: "10π", alt: ["10pi"], h: "25π=πr², r=5, C=2π(5)" },
-              { q: "Find area: d=12", a: "36π", alt: ["36pi"], h: "r=6, A=π(36)" },
-              { q: "Find radius: circumference=8π", a: "4", h: "8π=2πr, r=4" }
+              { q: "Find diameter: radius=9", a: "18", h: "d=2r" },
+              { q: "Find circumference: d=10", a: "10π", alt: ["10pi", "31.4"], h: "C=πd" }
             ]
           },
           {
             title: "Arcs and Sectors",
             content: `<h2>Arc Length and Sector Area</h2><div class="formula">Arc Length=(θ/360°)×2πr<br>Sector Area=(θ/360°)×πr²</div><p>θ=central angle in degrees</p>`,
             practice: [
-              { q: "Find arc length: r=6, central angle=60°", a: "2π", alt: ["2pi","6.28"], h: "(60/360)×2π(6) = (1/6)×12π" },
-              { q: "Find sector area: r=4, central angle=90°", a: "4π", alt: ["4pi","12.57"], h: "(90/360)×π(16) = (1/4)×16π" },
+              { q: "Find arc length: r=6, central angle=60°", a: "2π", alt: ["2pi", "6.28"], h: "(60/360)×2π(6) = (1/6)×12π" },
+              { q: "Find sector area: r=4, central angle=90°", a: "4π", alt: ["4pi", "12.57"], h: "(90/360)×π(16) = (1/4)×16π" },
               { q: "Arc length is 4π, r=6. Find central angle.", a: "120", h: "4π=(θ/360)×12π, θ/360=1/3" },
-              { q: "Find arc length: r=9, central angle=40°", a: "2π", alt: ["2pi","6.28"], h: "(40/360)×2π(9) = (1/9)×18π" },
+              { q: "Find arc length: r=9, central angle=40°", a: "2π", alt: ["2pi", "6.28"], h: "(40/360)×2π(9) = (1/9)×18π" },
               { q: "Sector area is 8π, r=8. Find central angle.", a: "45", h: "8π=(θ/360)×64π, θ/360=1/8" },
-              { q: "Find arc length: r=5, central angle=72°", a: "2π", alt: ["2pi","6.28"], h: "(72/360)×2π(5) = (1/5)×10π" },
-              { q: "Find sector area: r=6, central angle=60°", a: "6π", alt: ["6pi"], h: "(60/360)×π(36) = (1/6)×36π" },
-              { q: "Arc length is 3π, central angle=45°. Find r.", a: "12", h: "3π=(45/360)×2πr = (1/8)×2πr" },
-              { q: "Find arc length: r=10, central angle=36°", a: "2π", alt: ["2pi"], h: "(36/360)×2π(10) = (1/10)×20π" },
-              { q: "Sector area is 12π, central angle=120°. Find r.", a: "6", h: "12π=(120/360)×πr² = (1/3)×πr², r²=36" },
-              { q: "Find arc length: r=4, central angle=180°", a: "4π", alt: ["4pi"], h: "(180/360)×2π(4) = (1/2)×8π" },
-              { q: "Find sector area: r=3, central angle=120°", a: "3π", alt: ["3pi"], h: "(120/360)×π(9) = (1/3)×9π" },
-              { q: "Arc length is π, r=3. Find central angle.", a: "60", h: "π=(θ/360)×2π(3), 1=(θ/360)×6" },
-              { q: "Find arc length: r=8, central angle=30°", a: "4π/3", alt: ["(4/3)π","4pi/3"], h: "(30/360)×2π(8) = (1/12)×16π" },
-              { q: "Find sector area: r=10, central angle=180°", a: "50π", alt: ["50pi"], h: "(180/360)×π(100) = 50π" }
+              { q: "Find sector area: r=3, angle=120°", a: "3π", alt: ["3pi", "9.42"], h: "(120/360)×π(9) = (1/3)×9π" },
+              { q: "Find central angle: arc length=5π, r=10", a: "90", h: "5π=(θ/360)×20π → θ/360=1/4" }
             ]
           }
         ]
@@ -509,53 +387,41 @@ const courses = {
             title: "Unit Circle",
             content: `<h2>The Unit Circle</h2><p>Circle with radius 1 centered at origin.</p><div class="formula">x=cos(θ), y=sin(θ)</div><p>Key angles: 0°,30°,45°,60°,90°</p><div class="example"><div class="example-label">Key Values</div><p>sin(30°)=1/2, cos(45°)=√2/2, tan(60°)=√3</p></div>`,
             practice: [
-              { q: "sin(30°)=?", a: "1/2", alt: ["0.5",".5"], h: "On the unit circle, y-coordinate at 30°" },
-              { q: "cos(60°)=?", a: "1/2", alt: ["0.5",".5"], h: "cos(60°)=sin(30°) by co-function" },
+              { q: "sin(30°)=?", a: "1/2", alt: ["0.5", ".5"], h: "On the unit circle, y-coordinate at 30°" },
+              { q: "cos(60°)=?", a: "1/2", alt: ["0.5", ".5"], h: "cos(60°)=sin(30°) by co-function" },
               { q: "sin(90°)=?", a: "1", h: "At 90°, the point is (0,1) on unit circle" },
               { q: "cos(0°)=?", a: "1", h: "At 0°, the point is (1,0) on unit circle" },
               { q: "tan(45°)=?", a: "1", h: "tan=sin/cos, and at 45° sin=cos" },
-              { q: "sin(45°)=?", a: "√2/2", alt: ["sqrt2/2","0.707"], h: "At 45°, x=y, and x²+y²=1, so 2x²=1" },
-              { q: "cos(30°)=?", a: "√3/2", alt: ["sqrt3/2","0.866"], h: "x-coordinate at 30° on unit circle" },
-              { q: "tan(60°)=?", a: "√3", alt: ["sqrt3","1.732"], h: "tan(60°)=sin(60°)/cos(60°)=(√3/2)/(1/2)" },
-              { q: "cos(45°)=?", a: "√2/2", alt: ["sqrt2/2","0.707"], h: "At 45°, cos=sin=√2/2" },
-              { q: "sin(60°)=?", a: "√3/2", alt: ["sqrt3/2","0.866"], h: "y-coordinate at 60° on unit circle" },
-              { q: "tan(30°)=?", a: "√3/3", alt: ["sqrt3/3","1/√3","0.577"], h: "tan(30°)=sin(30°)/cos(30°)=(1/2)/(√3/2)" },
-              { q: "cos(90°)=?", a: "0", h: "At 90°, the point is (0,1), so x=0" }
+              { q: "sin(45°)=?", a: "√2/2", alt: ["sqrt2/2", "0.707"], h: "At 45°, x=y, and x²+y²=1, so 2x²=1" },
+              { q: "cos(90°)=?", a: "0", h: "At 90°, point is (0,1)" },
+              { q: "tan(30°)=?", a: "√3/3", alt: ["sqrt3/3", "1/√3", "0.577"], h: "sin/cos = (1/2)/(√3/2)" },
+              { q: "sin(180°)=?", a: "0", h: "Point is (-1,0), y=0" }
             ]
           },
           {
             title: "Trigonometric Identities",
             content: `<h2>Fundamental Identities</h2><div class="formula">sin²(θ)+cos²(θ)=1<br>1+tan²(θ)=sec²(θ)</div><div class="formula">tan(θ)=sin(θ)/cos(θ)</div>`,
             practice: [
-              { q: "If sin(θ)=3/5, find cos(θ)", a: "4/5", alt: ["0.8",".8"], h: "Use sin²+cos²=1: cos²=1-9/25=16/25" },
+              { q: "If sin(θ)=3/5, find cos(θ)", a: "4/5", alt: ["0.8", ".8"], h: "Use sin²+cos²=1: cos²=1-9/25=16/25" },
               { q: "Simplify: sin²(x)+cos²(x)", a: "1", h: "This is the Pythagorean identity" },
-              { q: "If cos(θ)=1/2, find sin(θ)", a: "√3/2", alt: ["sqrt3/2","0.866"], h: "sin²=1-1/4=3/4, so sin=√3/2" },
-              { q: "If tan(θ)=1, find sin(θ)", a: "√2/2", alt: ["sqrt2/2","0.707","1/√2"], h: "tan=1 means θ=45°, sin(45°)=√2/2" },
-              { q: "Simplify: 1-sin²(x)", a: "cos²x", alt: ["cos^2(x)","(cosx)²"], h: "Rearrange sin²+cos²=1" },
-              { q: "If cos(θ)=4/5, find sin(θ)", a: "3/5", alt: ["0.6",".6"], h: "Use sin²+cos²=1: sin²=1-16/25=9/25" },
-              { q: "Simplify: sec²(x)-1", a: "tan²x", alt: ["tan^2(x)"], h: "Rearrange 1+tan²=sec²" },
-              { q: "If sin(θ)=5/13, find tan(θ)", a: "5/12", alt: ["0.417"], h: "cos²=1-25/169=144/169, cos=12/13, tan=sin/cos" },
-              { q: "Simplify: 1+cot²(x)", a: "csc²x", alt: ["csc^2(x)"], h: "This is a Pythagorean identity" },
-              { q: "If tan(θ)=3/4, find cos(θ)", a: "4/5", alt: ["0.8"], h: "Draw right triangle: opp=3, adj=4, hyp=5, cos=adj/hyp" },
-              { q: "Simplify: sin(x)/cos(x)", a: "tanx", alt: ["tan(x)"], h: "Definition of tangent" },
-              { q: "If cos(θ)=√2/2, find tan(θ)", a: "1", h: "cos=√2/2 means θ=45°, tan(45°)=1" }
+              { q: "If cos(θ)=1/2, find sin(θ)", a: "√3/2", alt: ["sqrt3/2", "0.866"], h: "sin²=1-1/4=3/4, so sin=√3/2" },
+              { q: "If tan(θ)=1, find sin(θ)", a: "√2/2", alt: ["sqrt2/2", "0.707", "1/√2"], h: "tan=1 means θ=45°, sin(45°)=√2/2" },
+              { q: "Simplify: 1-sin²(x)", a: "cos²x", alt: ["cos^2(x)", "(cosx)²"], h: "Rearrange sin²+cos²=1" },
+              { q: "If sin(θ)=4/5, find tan(θ) (Q1)", a: "4/3", alt: ["1.333"], h: "opp=4, hyp=5, adj=3" },
+              { q: "Simplify: sec²(x)-tan²(x)", a: "1", h: "1+tan²=sec² → sec²-tan²=1" }
             ]
           },
           {
             title: "Solving Trigonometric Equations",
             content: `<h2>Solving Trig Equations</h2><p>Use inverse trig functions and consider period.</p><div class="example"><div class="example-label">Example</div><p>sin(x)=1/2 → x=30° or x=150° (in [0°,360°])</p></div>`,
             practice: [
-              { q: "Solve: sin(x)=0 (0°≤x<360°)", a: "0,180", alt: ["0°,180°","0, 180"], h: "sin(x)=0 at x=0° and x=180°" },
-              { q: "Solve: cos(x)=1/2 (0°≤x<360°)", a: "60,300", alt: ["60°,300°","60, 300"], h: "cos is positive in Q1 and Q4" },
-              { q: "Solve: tan(x)=1 (0°≤x<360°)", a: "45,225", alt: ["45°,225°","45, 225"], h: "tan is positive in Q1 and Q3" },
+              { q: "Solve: sin(x)=0 (0°≤x<360°)", a: "0,180", alt: ["0°,180°", "0, 180"], h: "sin(x)=0 at x=0° and x=180°" },
+              { q: "Solve: cos(x)=1/2 (0°≤x<360°)", a: "60,300", alt: ["60°,300°", "60, 300"], h: "cos is positive in Q1 and Q4" },
+              { q: "Solve: tan(x)=1 (0°≤x<360°)", a: "45,225", alt: ["45°,225°", "45, 225"], h: "tan is positive in Q1 and Q3" },
               { q: "Solve: sin(x)=1 (0°≤x<360°)", a: "90", h: "sin(x)=1 only at x=90°" },
-              { q: "Solve: cos(x)=0 (0°≤x<360°)", a: "90,270", alt: ["90°,270°","90, 270"], h: "cos(x)=0 at the top and bottom of unit circle" },
-              { q: "Solve: sin(x)=-1/2 (0°≤x<360°)", a: "210,330", alt: ["210°,330°"], h: "sin is negative in Q3 and Q4, reference angle=30°" },
-              { q: "Solve: cos(x)=-1/2 (0°≤x<360°)", a: "120,240", alt: ["120°,240°"], h: "cos is negative in Q2 and Q3, reference angle=60°" },
-              { q: "Solve: tan(x)=-1 (0°≤x<360°)", a: "135,315", alt: ["135°,315°"], h: "tan is negative in Q2 and Q4, reference angle=45°" },
-              { q: "Solve: sin(x)=√2/2 (0°≤x<360°)", a: "45,135", alt: ["45°,135°"], h: "sin is positive in Q1 and Q2, reference angle=45°" },
-              { q: "Solve: cos(x)=-1 (0°≤x<360°)", a: "180", h: "cos(x)=-1 at x=180°" },
-              { q: "Solve: tan(x)=0 (0°≤x<360°)", a: "0,180", alt: ["0°,180°"], h: "tan(x)=0 when sin(x)=0" }
+              { q: "Solve: cos(x)=0 (0°≤x<360°)", a: "90,270", alt: ["90°,270°", "90, 270"], h: "cos(x)=0 at the top and bottom of unit circle" },
+              { q: "Solve: sin(x)=-1 (0°≤x<360°)", a: "270", h: "sin is -1 at 270°" },
+              { q: "Solve: cos(x)=-1/2 (0°≤x<360°)", a: "120,240", alt: ["120°,240°"], h: "cos is negative in Q2 and Q3" }
             ]
           }
         ]
@@ -573,18 +439,8 @@ const courses = {
               { q: "Subtract: (5+2i)-(3+i)", a: "2+i", alt: ["2 + i"], h: "5-3=2, 2i-i=i" },
               { q: "Simplify: 3i×2i", a: "-6", h: "6i²=6(-1)=-6" },
               { q: "Find real part of: 3-7i", a: "3", h: "The real part is the term without i" },
-              { q: "Simplify: i³", a: "-i", alt: ["-1i"], h: "i³=i²·i=(-1)·i=-i" },
-              { q: "Add: (1+5i)+(3-2i)", a: "4+3i", alt: ["4 + 3i"], h: "Add real: 1+3=4, Add imag: 5i-2i=3i" },
-              { q: "Subtract: (7+4i)-(2+4i)", a: "5", h: "7-2=5, 4i-4i=0" },
-              { q: "Find imaginary part of: 4+9i", a: "9", h: "The imaginary part is the coefficient of i" },
-              { q: "Simplify: i⁵", a: "i", h: "i⁵=i⁴·i=1·i=i" },
-              { q: "Add: (-3+2i)+(5-i)", a: "2+i", alt: ["2 + i"], h: "Add real: -3+5=2, Add imag: 2i-i=i" },
-              { q: "Subtract: (8-i)-(3+4i)", a: "5-5i", alt: ["5 - 5i"], h: "8-3=5, -i-4i=-5i" },
-              { q: "Simplify: 4i×5i", a: "-20", h: "20i²=20(-1)=-20" },
-              { q: "Find real part of: -2+5i", a: "-2", h: "The real part is the term without i" },
-              { q: "Simplify: i⁶", a: "-1", h: "i⁶=(i²)³=(-1)³=-1" },
-              { q: "Add: (6+0i)+(0+3i)", a: "6+3i", alt: ["6 + 3i"], h: "Add real and imaginary parts separately" },
-              { q: "Subtract: (10+5i)-(10+2i)", a: "3i", h: "10-10=0, 5i-2i=3i" }
+              { q: "Multiply: (1+2i)(3-i)", a: "5+5i", alt: ["5 + 5i"], h: "3-i+6i-2i² = 3+5i+2" },
+              { q: "Find modulus of: 3+4i", a: "5", h: "√(3²+4²)=√25" }
             ]
           },
           {
@@ -595,19 +451,9 @@ const courses = {
               { q: "Multiply: (2+i)(2-i)", a: "5", h: "a²+b²=4+1=5" },
               { q: "Find conjugate of: 5-2i", a: "5+2i", alt: ["5 + 2i"], h: "Change the sign of the imaginary part" },
               { q: "Multiply: (3+2i)(3-2i)", a: "13", h: "a²+b²=9+4=13" },
-              { q: "Simplify: 1/(2+i)", a: "2/5-i/5", alt: ["0.4-0.2i","(2-i)/5"], h: "Multiply numerator and denominator by (2-i)" },
-              { q: "Find conjugate of: -1+3i", a: "-1-3i", alt: ["-1 - 3i"], h: "Change the sign of the imaginary part" },
-              { q: "Multiply: (1+i)(1-i)", a: "2", h: "a²+b²=1+1=2" },
-              { q: "Find conjugate of: 7", a: "7", h: "Real number is its own conjugate" },
-              { q: "Multiply: (4+3i)(4-3i)", a: "25", h: "a²+b²=16+9=25" },
-              { q: "Simplify: 1/(1+i)", a: "1/2-i/2", alt: ["0.5-0.5i","(1-i)/2"], h: "Multiply by (1-i)/(1-i)" },
-              { q: "Find conjugate of: 2i", a: "-2i", h: "0+2i → 0-2i = -2i" },
-              { q: "Multiply: (5+i)(5-i)", a: "26", h: "a²+b²=25+1=26" },
-              { q: "Simplify: 3/(1+2i)", a: "3/5-6i/5", alt: ["0.6-1.2i","3(1-2i)/5"], h: "Multiply by (1-2i)/(1-2i)" },
-              { q: "Find conjugate of: -4-i", a: "-4+i", h: "Change the sign of the imaginary part" },
-              { q: "Multiply: (x+iy)(x-iy)", a: "x²+y²", h: "This is the definition: (a+bi)(a-bi)=a²+b²" },
-              { q: "Simplify: (3+i)/(3-i)", a: "4/5+3i/5", alt: ["0.8+0.6i"], h: "Multiply by (3+i)/(3+i)" },
-              { q: "Find conjugate of: √2-3i", a: "√2+3i", alt: ["sqrt2+3i"], h: "Change the sign of the imaginary part" }
+              { q: "Simplify: 1/(2+i)", a: "2/5-i/5", alt: ["0.4-0.2i", "(2-i)/5"], h: "Multiply numerator and denominator by (2-i)" },
+              { q: "Find conjugate of: 4-3i", a: "4+3i", alt: ["4 + 3i"], h: "Flip the sign of b" },
+              { q: "Multiply: (1+i)(1-i)", a: "2", h: "1²+1²=2" }
             ]
           }
         ]
@@ -625,15 +471,8 @@ const courses = {
               { q: "Find 20th term: 10,7,4,1,...", a: "-47", h: "a₁=10, d=-3, a₂₀=10+19(-3)" },
               { q: "Which term is 47 in: 3,7,11,15,...?", a: "12", h: "3+(n-1)4=47, 4(n-1)=44, n-1=11" },
               { q: "Find sum: 2+5+8+...+20", a: "77", h: "a₁=2, d=3, find n: 2+(n-1)3=20, n=7. S₇=7/2(2+20)" },
-              { q: "Find 15th term: 4,9,14,19,...", a: "74", h: "a₁=4, d=5, a₁₅=4+14(5)" },
-              { q: "Find common difference: 20,16,12,8,...", a: "-4", h: "16-20=-4" },
-              { q: "Find sum of first 10 terms: 3,7,11,15,...", a: "210", h: "a₁=3, d=4, a₁₀=3+9(4)=39, S₁₀=10/2(3+39)" },
-              { q: "Find 8th term: 100,95,90,85,...", a: "65", h: "a₁=100, d=-5, a₈=100+7(-5)" },
-              { q: "Which term is 78 in: 6,11,16,21,...?", a: "15", h: "6+(n-1)5=78, 5(n-1)=72... wait, 78-6=72, 72/5 is not integer. Let me recalculate: 6+(n-1)×5=78, (n-1)×5=72, n-1=14.4. That's wrong. Let me fix: 6+(n-1)×5=78 → 5(n-1)=72 → n-1=14.4. Not valid. Let me use a different problem. Term 71: 6+(n-1)×5=71, 5(n-1)=65, n-1=13, n=14. Answer: 14" },
-              { q: "Find sum: 10+7+4+1+(-2)+(-5)", a: "15", h: "6 terms, a₁=10, a₆=-5, S₆=6/2(10+(-5))" },
-              { q: "Find 25th term: 1,4,7,10,...", a: "73", h: "a₁=1, d=3, a₂₅=1+24(3)" },
-              { q: "Find sum of first 20 terms: 5,10,15,20,...", a: "1050", h: "a₁=5, d=5, a₂₀=5+19(5)=100, S₂₀=20/2(5+100)" },
-              { q: "Find n if a₁=8, d=3, aₙ=50", a: "15", h: "8+(n-1)3=50, 3(n-1)=42, n-1=14" }
+              { q: "Find common difference: 10,7,4,1", a: "-3", h: "7-10" },
+              { q: "Sum first 6 terms: 3,6,9,12,15,18", a: "63", h: "S₆=6/2(3+18)" }
             ]
           },
           {
@@ -641,20 +480,13 @@ const courses = {
             content: `<h2>Geometric Sequence</h2><p>Ratio between consecutive terms is constant.</p><div class="formula">aₙ=a₁·r^(n-1)<br>Sₙ=a₁(1-r^n)/(1-r)</div><p>• r=common ratio</p>`,
             practice: [
               { q: "Find 5th term: 2,6,18,54,...", a: "162", h: "a₁=2, r=3, a₅=2·3⁴=2·81" },
-              { q: "Find common ratio: 8,4,2,1,...", a: "1/2", alt: ["0.5",".5"], h: "4/8=1/2" },
+              { q: "Find common ratio: 8,4,2,1,...", a: "1/2", alt: ["0.5", ".5"], h: "4/8=1/2" },
               { q: "Find 6th term: 3,-6,12,-24,...", a: "96", h: "a₁=3, r=-2, a₆=3·(-2)⁵=3·(-32)" },
               { q: "Find sum of first 4 terms: 1,2,4,8", a: "15", h: "S₄=1(1-2⁴)/(1-2)=(1-16)/(-1)" },
               { q: "Find 8th term: 5,10,20,40,...", a: "640", h: "a₁=5, r=2, a₈=5·2⁷=5·128" },
               { q: "Find common ratio: 27,9,3,1,...", a: "1/3", alt: ["0.333"], h: "9/27=1/3" },
-              { q: "Find 4th term: 1,-3,9,-27,...", a: "81", h: "a₁=1, r=-3, a₄=1·(-3)³" },
-              { q: "Find common ratio: 2,8,32,128,...", a: "4", h: "8/2=4" },
-              { q: "Find sum of first 5 terms: 3,6,12,24,48", a: "93", h: "S₅=3(1-2⁵)/(1-2)=3(1-32)/(-1)" },
-              { q: "Find 7th term: 1/2,1,2,4,...", a: "32", h: "a₁=1/2, r=2, a₇=(1/2)·2⁶=(1/2)·64" },
-              { q: "Find common ratio: 100,20,4,0.8,...", a: "1/5", alt: ["0.2",".2"], h: "20/100=1/5" },
-              { q: "Find 5th term: 4,-8,16,-32,...", a: "64", h: "a₁=4, r=-2, a₅=4·(-2)⁴=4·16" },
-              { q: "Find sum of first 6 terms: 2,6,18,54,...", a: "728", h: "r=3, S₆=2(1-3⁶)/(1-2)=2(1-729)/(-2)" },
-              { q: "Find 10th term: 1,1/2,1/4,1/8,...", a: "1/512", alt: ["0.00195"], h: "a₁=1, r=1/2, a₁₀=1·(1/2)⁹" },
-              { q: "Find common ratio: -3,6,-12,24,...", a: "-2", h: "6/(-3)=-2" }
+              { q: "Find common ratio: 10,20,40,80", a: "2", h: "20/10" },
+              { q: "Sum infinite series: 8, 4, 2, 1...", a: "16", h: "a/(1-r) = 8/(1-0.5)" }
             ]
           }
         ]
@@ -664,14 +496,14 @@ const courses = {
 };
 
 /* ==============================
-   Mixed Practice Pool (index page)
-   ============================== */
+Mixed Practice Pool (index page)
+============================== */
 const mixedPracticePool = [
   { q: "Evaluate 3x+7 when x=4", a: "19", course: "algebra1" },
   { q: "Solve: x-5=12", a: "17", course: "algebra1" },
   { q: "Simplify: 4+2×5", a: "14", course: "algebra1" },
   { q: "Find slope through (2,3) and (4,7)", a: "2", course: "algebra1" },
-  { q: "Solve: x²-16=0", a: "4,-4", alt: ["-4,4","±4"], course: "algebra2" },
+  { q: "Solve: x²-16=0", a: "4,-4", alt: ["-4,4", "±4"], course: "algebra2" },
   { q: "Evaluate: log₂(8)", a: "3", course: "algebra2" },
   { q: "Factor: x²-5x+6", a: "(x-2)(x-3)", alt: ["(x-3)(x-2)"], course: "algebra2" },
   { q: "Simplify: 2⁵", a: "32", course: "algebra2" },
@@ -679,16 +511,32 @@ const mixedPracticePool = [
   { q: "Find hypotenuse: legs 8 and 15", a: "17", course: "geometry" },
   { q: "Find area of circle: r=3", a: "9π", alt: ["9pi"], course: "geometry" },
   { q: "Third angle: 40°, 60°, ?", a: "80", course: "geometry" },
-  { q: "sin(60°)=?", a: "√3/2", alt: ["sqrt3/2","0.866"], course: "precalculus" },
+  { q: "sin(60°)=?", a: "√3/2", alt: ["sqrt3/2", "0.866"], course: "precalculus" },
   { q: "Simplify: i³", a: "-i", alt: ["-1i"], course: "precalculus" },
   { q: "Find 5th term: 1,3,9,27,...", a: "81", course: "precalculus" },
-  { q: "If cos(θ)=√3/2, find θ (in degrees, 0-90)", a: "30", course: "precalculus" }
+  { q: "If cos(θ)=√3/2, find θ (in degrees, 0-90)", a: "30", course: "precalculus" },
+  // NEW MIXED PROBLEMS
+  { q: "Solve: 3x+4=16", a: "4", course: "algebra1" },
+  { q: "Find vertex: y=(x-2)²+3", a: "(2,3)", alt: ["2,3"], course: "algebra2" },
+  { q: "Find complement of 45°", a: "45", course: "geometry" },
+  { q: "cos(90°)=?", a: "0", course: "precalculus" },
+  { q: "Simplify: 5×2+3²", a: "19", course: "algebra1" },
+  { q: "Solve: x²-4x=0", a: "0,4", alt: ["4,0"], course: "algebra2" },
+  { q: "Find area: r=5", a: "25π", alt: ["25pi"], course: "geometry" },
+  { q: "tan(45°)=?", a: "1", course: "precalculus" },
+  { q: "Solve: x/4=5", a: "20", course: "algebra1" },
+  { q: "Find discriminant of x²+3x+2=0", a: "1", course: "algebra2" },
+  { q: "Find leg: hypotenuse 10, leg 6", a: "8", course: "geometry" },
+  { q: "sin(90°)=?", a: "1", course: "precalculus" },
+  { q: "Evaluate 6x-4 when x=2", a: "8", course: "algebra1" },
+  { q: "Simplify: 2⁴×2³", a: "128", course: "algebra2" },
+  { q: "Find common ratio: 27,9,3,1", a: "1/3", alt: ["0.333"], course: "precalculus" },
+  { q: "Find sum of first 5 terms: 1,3,5,7,9", a: "25", course: "precalculus" }
 ];
 
 /* ==============================
-   Utility Functions
-   ============================== */
-
+Utility Functions
+============================== */
 function initParticles() {
   const container = document.getElementById('particles');
   if (!container) return;
@@ -701,29 +549,17 @@ function initParticles() {
     container.appendChild(p);
   }
 }
-
 function getCourseKey() {
   return new URLSearchParams(window.location.search).get('course');
 }
-
 function getLessonIndices() {
   const params = new URLSearchParams(window.location.search);
   return { unit: parseInt(params.get('unit')), lesson: parseInt(params.get('lesson')) };
 }
 
-function shuffleArray(arr) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
 /* ==============================
-   Course Page Rendering
-   ============================== */
-
+Course Page Rendering
+============================== */
 function renderCoursePage() {
   const courseKey = getCourseKey();
   if (!courseKey || !courses[courseKey]) return;
@@ -735,6 +571,7 @@ function renderCoursePage() {
   document.querySelector('.course-hero-icon span').textContent = course.title[0];
   document.querySelector('.course-hero-icon span').style.color = course.color;
   document.getElementById('breadcrumb-course').textContent = course.title;
+  
   const unitsSection = document.querySelector('.units-section');
   unitsSection.innerHTML = '';
   course.units.forEach((unit, unitIdx) => {
@@ -762,9 +599,8 @@ function renderCoursePage() {
 }
 
 /* ==============================
-   Lesson Page Rendering
-   ============================== */
-
+Lesson Page Rendering
+============================== */
 function renderLessonPage() {
   const courseKey = getCourseKey();
   const { unit, lesson } = getLessonIndices();
@@ -772,22 +608,27 @@ function renderLessonPage() {
   const course = courses[courseKey];
   const lessonData = course?.units[unit]?.lessons[lesson];
   if (!lessonData) return;
+  
   document.getElementById('bc-course').textContent = course.title;
   document.getElementById('bc-course-link').href = `course.html?course=${courseKey}`;
   document.getElementById('bc-lesson').textContent = lessonData.title;
   document.querySelector('.lesson-header h1').textContent = lessonData.title;
   document.querySelector('.lesson-header p').textContent = `Unit ${unit + 1} • ${course.units[unit].title}`;
   document.querySelector('.lesson-content-area').innerHTML = lessonData.content;
+  
   const practiceSection = document.querySelector('.practice-section');
   if (lessonData.practice && lessonData.practice.length > 0) {
     practiceSection.style.display = 'block';
     const totalProblems = lessonData.practice.length;
+    let solvedCount = 0;
     const scoreFraction = document.getElementById('score-fraction');
     const scorePct = document.getElementById('score-pct');
     if (scoreFraction) scoreFraction.textContent = `0 / ${totalProblems}`;
     if (scorePct) scorePct.textContent = '0%';
+
     const problemsContainer = practiceSection.querySelector('.practice-problems');
     problemsContainer.innerHTML = '';
+
     lessonData.practice.forEach((prob, idx) => {
       const problemDiv = document.createElement('div');
       problemDiv.className = 'practice-problem';
@@ -803,6 +644,7 @@ function renderLessonPage() {
       `;
       problemsContainer.appendChild(problemDiv);
     });
+
     problemsContainer.querySelectorAll('.btn-check').forEach(btn => {
       btn.addEventListener('click', function() {
         const idx = parseInt(this.dataset.idx);
@@ -810,6 +652,7 @@ function renderLessonPage() {
         checkLessonAnswer(idx, prob.a, prob.alt || []);
       });
     });
+
     problemsContainer.querySelectorAll('.problem-hint-btn').forEach(btn => {
       btn.addEventListener('click', function() {
         const idx = parseInt(this.dataset.idx);
@@ -817,6 +660,7 @@ function renderLessonPage() {
         if (hintEl) hintEl.classList.toggle('visible');
       });
     });
+
     const showAllHintsBtn = document.getElementById('show-all-hints');
     if (showAllHintsBtn) {
       showAllHintsBtn.addEventListener('click', () => {
@@ -838,9 +682,11 @@ function checkLessonAnswer(idx, correctAnswer, altAnswers) {
   const normalizedCorrect = correctAnswer.toLowerCase().replace(/\s+/g, '');
   const normalizedAlts = altAnswers.map(a => a.toLowerCase().replace(/\s+/g, ''));
   const isCorrect = userAnswer === normalizedCorrect || normalizedAlts.includes(userAnswer);
+  
   feedback.className = 'problem-feedback ' + (isCorrect ? 'correct' : 'incorrect');
   feedback.textContent = isCorrect ? '✓ Correct!' : `✗ Incorrect. The answer is ${correctAnswer}`;
   feedback.style.display = 'block';
+  
   if (isCorrect) {
     input.disabled = true;
     input.style.borderColor = 'var(--accent-green)';
@@ -900,23 +746,22 @@ function setupNavigation(courseKey, unitIdx, lessonIdx, course) {
     nextBtn.textContent = 'Course Complete!';
   }
   markBtn.onclick = () => {
-    markBtn.textContent = '\u2713 Completed';
+    markBtn.textContent = '✓ Completed';
     markBtn.style.background = 'var(--accent-green)';
   };
 }
 
 /* ==============================
-   Index Page — Quick Practice
-   ============================== */
-
+Index Page — Quick Practice
+============================== */
 let indexPracticeState = { problems: [], currentIdx: 0, score: 0, answered: false };
-
 function initIndexPractice() {
   const topicSelect = document.getElementById('practice-topic');
   const newProblemBtn = document.getElementById('new-problem');
   const checkBtn = document.getElementById('prob-check');
   const answerInput = document.getElementById('prob-answer');
   if (!topicSelect || !newProblemBtn || !checkBtn) return;
+  
   newProblemBtn.addEventListener('click', () => loadNewIndexProblem());
   checkBtn.addEventListener('click', () => checkIndexAnswer());
   answerInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') checkIndexAnswer(); });
@@ -937,12 +782,19 @@ function getProblemsForTopic(topic) {
   if (!course) return problems;
   course.units.forEach(unit => {
     unit.lessons.forEach(lesson => {
-      if (lesson.practice) {
-        lesson.practice.forEach(p => { problems.push({ ...p, course: topic }); });
-      }
+      if (lesson.practice) lesson.practice.forEach(p => problems.push({ ...p, course: topic }));
     });
   });
   return problems;
+}
+
+function shuffleArray(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }
 
 function loadNewIndexProblem() {
@@ -950,9 +802,13 @@ function loadNewIndexProblem() {
   const questionEl = document.getElementById('prob-question');
   const answerInput = document.getElementById('prob-answer');
   const feedbackEl = document.getElementById('prob-feedback');
+  
   if (indexPracticeState.currentIdx >= indexPracticeState.problems.length) {
     const allProblems = getProblemsForTopic(topic);
-    if (allProblems.length === 0) { questionEl.textContent = 'No problems available for this topic.'; return; }
+    if (allProblems.length === 0) {
+      questionEl.textContent = 'No problems available for this topic.';
+      return;
+    }
     indexPracticeState.problems = shuffleArray(allProblems).slice(0, 5);
     indexPracticeState.currentIdx = 0;
     if (indexPracticeState.answered || indexPracticeState.problems.length === allProblems.length) {
@@ -960,6 +816,7 @@ function loadNewIndexProblem() {
       updateIndexScoreDisplay();
     }
   }
+  
   const prob = indexPracticeState.problems[indexPracticeState.currentIdx];
   questionEl.textContent = prob.q;
   answerInput.value = '';
@@ -985,15 +842,17 @@ function checkIndexAnswer() {
   const checkBtn = document.getElementById('prob-check');
   const userAnswer = answerInput.value.trim().toLowerCase().replace(/\s+/g, '');
   if (!userAnswer) return;
+  
   const prob = indexPracticeState.problems[indexPracticeState.currentIdx];
   const normalizedCorrect = prob.a.toLowerCase().replace(/\s+/g, '');
   const normalizedAlts = (prob.alt || []).map(a => a.toLowerCase().replace(/\s+/g, ''));
   const isCorrect = userAnswer === normalizedCorrect || normalizedAlts.includes(userAnswer);
+  
   feedbackEl.style.display = 'block';
   indexPracticeState.answered = true;
   if (isCorrect) {
     feedbackEl.className = 'practice-feedback correct';
-    feedbackEl.innerHTML = '\u2713 Correct! <span class="feedback-next">Click "Check" or press Enter for next problem.</span>';
+    feedbackEl.innerHTML = '✓ Correct! Click "Check" or press Enter for next problem.';
     answerInput.disabled = true;
     answerInput.style.borderColor = 'var(--accent-green)';
     answerInput.style.background = 'rgba(34,197,94,0.05)';
@@ -1001,7 +860,7 @@ function checkIndexAnswer() {
     updateIndexScoreDisplay();
   } else {
     feedbackEl.className = 'practice-feedback incorrect';
-    feedbackEl.innerHTML = `\u2717 Incorrect. The answer is <strong>${prob.a}</strong>. <span class="feedback-next">Click "Check" to continue.</span>`;
+    feedbackEl.innerHTML = `✗ Incorrect. The answer is <strong>${prob.a}</strong>. <span class="feedback-next">Click "Check" to continue.</span>`;
   }
   checkBtn.textContent = 'Next';
 }
@@ -1014,11 +873,9 @@ function updateIndexScoreDisplay() {
 }
 
 /* ==============================
-   Course Page — Challenge
-   ============================== */
-
+Course Page — Challenge
+============================== */
 let challengeState = { problems: [], currentIdx: 0, score: 0, streak: 0, maxStreak: 0, results: [], answered: false };
-
 function initCourseChallenge(courseKey) {
   const startBtn = document.getElementById('challenge-start');
   const resetBtn = document.getElementById('challenge-reset');
@@ -1028,6 +885,7 @@ function initCourseChallenge(courseKey) {
   const skipBtn = document.getElementById('ch-skip');
   const answerInput = document.getElementById('ch-answer');
   if (!startBtn) return;
+  
   startBtn.addEventListener('click', () => startChallenge(courseKey));
   resetBtn?.addEventListener('click', () => startChallenge(courseKey));
   restartBtn?.addEventListener('click', () => startChallenge(courseKey));
@@ -1045,14 +903,20 @@ function startChallenge(courseKey) {
     unit.lessons.forEach(lesson => {
       if (lesson.practice) {
         lesson.practice.forEach(p => {
-          allProblems.push({ q: p.q, a: p.a, alt: p.alt || [], h: p.h || `Think about the key concept from "${lesson.title}"`, lesson: lesson.title });
+          allProblems.push({
+            q: p.q, a: p.a, alt: p.alt || [],
+            h: p.h || `Think about the key concept from "${lesson.title}"`,
+            lesson: lesson.title
+          });
         });
       }
     });
   });
   if (allProblems.length === 0) return;
+  
   const selected = shuffleArray(allProblems).slice(0, Math.min(10, allProblems.length));
   challengeState = { problems: selected, currentIdx: 0, score: 0, streak: 0, maxStreak: 0, results: [], answered: false };
+  
   document.getElementById('challenge-workspace').style.display = 'block';
   document.getElementById('challenge-results').style.display = 'none';
   document.getElementById('challenge-start').style.display = 'none';
@@ -1078,6 +942,7 @@ function loadChallengeQuestion() {
   document.getElementById('ch-answer').style.borderColor = '';
   document.getElementById('ch-answer').style.background = '';
   document.getElementById('ch-check').textContent = 'Check';
+  
   const pct = ((challengeState.currentIdx) / total) * 100;
   document.getElementById('challenge-progress-fill').style.width = pct + '%';
   challengeState.answered = false;
@@ -1087,13 +952,17 @@ function loadChallengeQuestion() {
 function checkChallengeAnswer() {
   if (challengeState.answered) {
     challengeState.currentIdx++;
-    if (challengeState.currentIdx >= challengeState.problems.length) { showChallengeResults(); }
-    else { loadChallengeQuestion(); }
+    if (challengeState.currentIdx >= challengeState.problems.length) {
+      showChallengeResults();
+    } else {
+      loadChallengeQuestion();
+    }
     return;
   }
   const answerInput = document.getElementById('ch-answer');
   const userAnswer = answerInput.value.trim().toLowerCase().replace(/\s+/g, '');
   if (!userAnswer) return;
+  
   const prob = challengeState.problems[challengeState.currentIdx];
   const normalizedCorrect = prob.a.toLowerCase().replace(/\s+/g, '');
   const normalizedAlts = prob.alt.map(a => a.toLowerCase().replace(/\s+/g, ''));
@@ -1101,9 +970,10 @@ function checkChallengeAnswer() {
   const feedbackEl = document.getElementById('ch-feedback');
   feedbackEl.style.display = 'block';
   challengeState.answered = true;
+  
   if (isCorrect) {
     feedbackEl.className = 'challenge-feedback correct';
-    feedbackEl.textContent = '\u2713 Correct!';
+    feedbackEl.textContent = '✓ Correct!';
     answerInput.disabled = true;
     answerInput.style.borderColor = 'var(--accent-green)';
     answerInput.style.background = 'rgba(34,197,94,0.05)';
@@ -1112,7 +982,7 @@ function checkChallengeAnswer() {
     if (challengeState.streak > challengeState.maxStreak) challengeState.maxStreak = challengeState.streak;
   } else {
     feedbackEl.className = 'challenge-feedback incorrect';
-    feedbackEl.innerHTML = `\u2717 Incorrect. The answer is <strong>${prob.a}</strong>`;
+    feedbackEl.innerHTML = `✗ Incorrect. The answer is <strong>${prob.a}</strong>`;
     challengeState.streak = 0;
   }
   challengeState.results.push({ q: prob.q, correct: isCorrect, userAnswer: answerInput.value.trim(), correctAnswer: prob.a });
@@ -1132,39 +1002,41 @@ function skipChallengeQuestion() {
   challengeState.streak = 0;
   document.getElementById('ch-streak').textContent = challengeState.streak;
   challengeState.currentIdx++;
-  if (challengeState.currentIdx >= challengeState.problems.length) { showChallengeResults(); }
-  else { loadChallengeQuestion(); }
+  if (challengeState.currentIdx >= challengeState.problems.length) showChallengeResults();
+  else loadChallengeQuestion();
 }
 
 function showChallengeResults() {
   document.getElementById('challenge-workspace').style.display = 'none';
   document.getElementById('challenge-results').style.display = 'block';
   document.getElementById('challenge-reset').style.display = 'none';
+  
   const total = challengeState.problems.length;
   const score = challengeState.score;
   const pct = Math.round((score / total) * 100);
   document.getElementById('results-pct').textContent = pct + '%';
+  
   let summaryText = '';
   if (pct === 100) summaryText = `Perfect score! You answered all ${total} questions correctly!`;
   else if (pct >= 80) summaryText = `Great job! You scored ${score}/${total}. Keep it up!`;
   else if (pct >= 60) summaryText = `Good effort! You scored ${score}/${total}. Room for improvement!`;
   else summaryText = `Keep practicing! You scored ${score}/${total}. Review the lessons and try again!`;
-  if (challengeState.maxStreak >= 3) summaryText += ` Best streak: ${challengeState.maxStreak} \uD83D\uDD25`;
+  if (challengeState.maxStreak >= 3) summaryText += ` Best streak: ${challengeState.maxStreak} 🔥`;
   document.getElementById('results-summary').textContent = summaryText;
+  
   const breakdown = document.getElementById('results-breakdown');
   breakdown.innerHTML = '';
   challengeState.results.forEach((r, i) => {
     const item = document.createElement('div');
     item.className = 'result-item ' + (r.correct ? 'correct' : 'incorrect');
-    item.innerHTML = `<span class="result-status">${r.correct ? '\u2713' : '\u2717'}</span><span class="result-q">${i + 1}. ${r.q}</span><span class="result-a">${r.correct ? '' : `Ans: ${r.correctAnswer}`}</span>`;
+    item.innerHTML = `<span class="result-status">${r.correct ? '✓' : '✗'}</span> <span class="result-q">${i + 1}. ${r.q}</span> <span class="result-a">${r.correct ? '' : 'Ans: ' + r.correctAnswer}</span>`;
     breakdown.appendChild(item);
   });
 }
 
 /* ==============================
-   Initialization
-   ============================== */
-
+Initialization
+============================== */
 document.addEventListener('DOMContentLoaded', () => {
   initParticles();
   const path = window.location.pathname;
